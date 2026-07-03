@@ -1,5 +1,5 @@
 import re
-from typing import List
+from typing import Dict, List
 
 import requests
 from bs4 import BeautifulSoup
@@ -19,7 +19,10 @@ class ComputrabajoProvider(Provider):
         "Accept": "text/html,application/xhtml+xml",
     }
 
-    BROAD_QUERY = "sistemas+tecnologia+infraestructura+informatica+devops+linux"
+    KEYWORDS = [
+        "sistemas", "informatica", "tecnologia", "infraestructura",
+        "devops", "linux", "soporte", "programador",
+    ]
 
     def __init__(self):
         self._all_jobs: List[Job] = []
@@ -48,75 +51,74 @@ class ComputrabajoProvider(Provider):
         return matched
 
     def _fetch_all(self) -> List[Job]:
-        url = f"{self.BASE_URL}/ofertas-de-trabajo/?q={self.BROAD_QUERY}"
+        seen: Dict[str, Job] = {}
 
-        try:
-            resp = requests.get(url, headers=self.HEADERS, timeout=15)
-            resp.raise_for_status()
-        except requests.RequestException:
-            return []
-
-        soup = BeautifulSoup(resp.text, "html.parser")
-        jobs: List[Job] = []
-        seen: set = set()
-
-        for article in soup.find_all(
-            "article", class_=lambda c: c and "box_offer" in str(c)
-        ):
-            title_link = article.select_one("h2 a")
-            if not title_link:
+        for kw in self.KEYWORDS:
+            url = f"{self.BASE_URL}/trabajo-de-{kw}"
+            try:
+                resp = requests.get(url, headers=self.HEADERS, timeout=15)
+                resp.raise_for_status()
+            except requests.RequestException:
                 continue
 
-            title = title_link.get_text(strip=True)
-            href = title_link.get("href", "")
-            full_url = (
-                f"{self.BASE_URL}{href}" if href.startswith("/") else href
-            )
-            full_url = full_url.split("#")[0]
+            soup = BeautifulSoup(resp.text, "html.parser")
 
-            if full_url in seen:
-                continue
-            seen.add(full_url)
+            for article in soup.find_all(
+                "article", class_=lambda c: c and "box_offer" in str(c)
+            ):
+                title_link = article.select_one("h2 a")
+                if not title_link:
+                    continue
 
-            company_el = article.select_one(
-                "a[offer-grid-article-company-url]"
-            ) or article.select_one("p.dFlex a.fc_base")
-            company = company_el.get_text(strip=True) if company_el else ""
+                title = title_link.get_text(strip=True)
+                href = title_link.get("href", "")
+                full_url = (
+                    f"{self.BASE_URL}{href}" if href.startswith("/") else href
+                )
+                full_url = full_url.split("#")[0]
 
-            loc_ps = article.select("p.fs16.fc_base.mt5")
-            location = "Mexico"
-            for lp in loc_ps:
-                if "dFlex" not in (lp.get("class") or []):
-                    span = lp.select_one("span.mr10")
-                    if span:
-                        location = span.get_text(strip=True)
-                        break
+                if full_url in seen:
+                    continue
 
-            date_el = article.select_one("p.fs13.fc_aux.mt15")
-            date_raw = date_el.get_text(strip=True) if date_el else ""
+                company_el = article.select_one(
+                    "a[offer-grid-article-company-url]"
+                ) or article.select_one("p.dFlex a.fc_base")
+                company = company_el.get_text(strip=True) if company_el else ""
 
-            salary_el = article.select_one("div.fs13.mt15 span.dIB.mr10")
-            salary = salary_el.get_text(strip=True) if salary_el else ""
+                loc_ps = article.select("p.fs16.fc_base.mt5")
+                location = "Mexico"
+                for lp in loc_ps:
+                    if "dFlex" not in (lp.get("class") or []):
+                        span = lp.select_one("span.mr10")
+                        if span:
+                            location = span.get_text(strip=True)
+                            break
 
-            text = article.get_text().lower()
-            is_remote = any(
-                w in text
-                for w in [
-                    "remoto", "home office", "homeoffice",
-                    "desde casa", "100% remoto", "trabajo remoto", "remota",
-                ]
-            )
-            is_hibrido = any(w in text for w in ["hibrido", "híbrido", "mixto"])
+                date_el = article.select_one("p.fs13.fc_aux.mt15")
+                date_raw = date_el.get_text(strip=True) if date_el else ""
 
-            jobs.append(Job(
-                title=title,
-                company=company,
-                location=location,
-                url=full_url,
-                source="computrabajo",
-                salary=salary,
-                date_posted=date_raw,
-                remote=is_remote or is_hibrido,
-            ))
+                salary_el = article.select_one("div.fs13.mt15 span.dIB.mr10")
+                salary = salary_el.get_text(strip=True) if salary_el else ""
 
-        return jobs
+                text = article.get_text().lower()
+                is_remote = any(
+                    w in text
+                    for w in [
+                        "remoto", "home office", "homeoffice",
+                        "desde casa", "100% remoto", "trabajo remoto", "remota",
+                    ]
+                )
+                is_hibrido = any(w in text for w in ["hibrido", "híbrido", "mixto"])
+
+                seen[full_url] = Job(
+                    title=title,
+                    company=company,
+                    location=location,
+                    url=full_url,
+                    source="computrabajo",
+                    salary=salary,
+                    date_posted=date_raw,
+                    remote=is_remote or is_hibrido,
+                )
+
+        return list(seen.values())
