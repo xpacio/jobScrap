@@ -25,7 +25,7 @@ class SearchConfig:
 @dataclass
 class AppConfig:
     search: SearchConfig = field(default_factory=SearchConfig)
-    providers: List[str] = field(default_factory=lambda: ["remoteok", "weworkremotely", "computrabajo", "trabajoorg"])
+    providers: List[str] = field(default_factory=lambda: ["remoteok", "weworkremotely", "computrabajo", "trabajoorg", "occ"])
     db_path: str = "jobs.db"
     dsn: str = ""
 

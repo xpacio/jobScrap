@@ -112,7 +112,7 @@ if (file_exists($last_run_file)) {
     $last_run_relative = time_ago($last_run_ts);
 }
 
-$source_map = ['remoteok'=>'RemoteOK','wwr'=>'WWR','computrabajo'=>'CompuTrabajo','trabajoorg'=>'TrabajoOrg'];
+$source_map = ['remoteok'=>'RemoteOK','wwr'=>'WWR','computrabajo'=>'CompuTrabajo','trabajoorg'=>'TrabajoOrg','occ'=>'OCC'];
 
 function is_new($created_at, $last_run_ts) {
     if (!$last_run_ts || !$created_at) return false;

@@ -25,6 +25,8 @@ def load_providers():
     PROVIDER_MAP["computrabajo"] = ComputrabajoProvider
     from providers.trabajoorg import TrabajoOrgProvider
     PROVIDER_MAP["trabajoorg"] = TrabajoOrgProvider
+    from providers.occ import OCCProvider
+    PROVIDER_MAP["occ"] = OCCProvider
 
 
 def display_jobs(jobs: List[Job]):
