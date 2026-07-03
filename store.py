@@ -5,9 +5,19 @@ from models.job import Job
 
 
 class Store:
+    @staticmethod
+    def _clean_dsn(dsn: str) -> str:
+        dsn = dsn.strip()
+        for prefix in ("pgsql:", "postgresql://", "postgres://"):
+            if dsn.startswith(prefix):
+                dsn = dsn[len(prefix):]
+                break
+        return dsn
+
     def __init__(self, dsn: Optional[str] = None, db_path: str = "jobs.db"):
-        self.dsn = dsn or os.environ.get("JOBSCRAP_DSN")
-        if self.dsn:
+        raw = dsn or os.environ.get("JOBSCRAP_DSN") or ""
+        if raw:
+            self.dsn = self._clean_dsn(raw)
             import psycopg2
             self.conn = psycopg2.connect(self.dsn)
             self._pg = True
@@ -16,6 +26,8 @@ class Store:
             self.conn = sqlite3.connect(db_path)
             self._pg = False
         self._create_table()
+        if self._pg:
+            self._create_keywords_table()
 
     def _create_table(self):
         if self._pg:
@@ -52,6 +64,82 @@ class Store:
                 )
             """)
             self.conn.commit()
+
+    def _create_keywords_table(self):
+        cur = self.conn.cursor()
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS keywords (
+                id SERIAL PRIMARY KEY,
+                word TEXT NOT NULL UNIQUE,
+                active BOOLEAN DEFAULT TRUE,
+                created_at TIMESTAMPTZ DEFAULT NOW()
+            )
+        """)
+        self.conn.commit()
+        cur.close()
+
+    def get_keywords(self) -> List[str]:
+        if not self._pg:
+            return []
+        try:
+            cur = self.conn.cursor()
+            cur.execute("SELECT word FROM keywords WHERE active = TRUE ORDER BY id")
+            rows = cur.fetchall()
+            cur.close()
+            return [r[0] for r in rows]
+        except Exception:
+            return []
+
+    def add_keyword(self, word: str) -> bool:
+        if not self._pg:
+            return False
+        try:
+            cur = self.conn.cursor()
+            cur.execute(
+                "INSERT INTO keywords (word) VALUES (%s) ON CONFLICT (word) DO UPDATE SET active = TRUE",
+                (word.strip(),),
+            )
+            self.conn.commit()
+            cur.close()
+            return True
+        except Exception:
+            return False
+
+    def delete_keyword(self, word_id: int) -> bool:
+        if not self._pg:
+            return False
+        try:
+            cur = self.conn.cursor()
+            cur.execute("DELETE FROM keywords WHERE id = %s", (word_id,))
+            self.conn.commit()
+            cur.close()
+            return True
+        except Exception:
+            return False
+
+    def toggle_keyword(self, word_id: int, active: bool) -> bool:
+        if not self._pg:
+            return False
+        try:
+            cur = self.conn.cursor()
+            cur.execute("UPDATE keywords SET active = %s WHERE id = %s", (active, word_id))
+            self.conn.commit()
+            cur.close()
+            return True
+        except Exception:
+            return False
+
+    def get_keywords_full(self) -> List[dict]:
+        if not self._pg:
+            return []
+        try:
+            cur = self.conn.cursor()
+            cur.execute("SELECT id, word, active FROM keywords ORDER BY id")
+            rows = cur.fetchall()
+            cur.close()
+            return [{"id": r[0], "word": r[1], "active": r[2]} for r in rows]
+        except Exception:
+            return []
 
     def save_jobs(self, jobs: List[Job]) -> int:
         new_count = 0

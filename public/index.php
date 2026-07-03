@@ -13,10 +13,45 @@ try {
     die('Sin conexion a BD y sin reporte HTML disponible.');
 }
 
+// --- Keywords CRUD ---
+$pdo->exec("CREATE TABLE IF NOT EXISTS keywords (
+    id SERIAL PRIMARY KEY,
+    word TEXT NOT NULL UNIQUE,
+    active BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+)");
+
+$msg = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $action = $_POST['action'] ?? '';
+    if ($action === 'add' && !empty($_POST['word'])) {
+        $word = trim($_POST['word']);
+        if ($word) {
+            $stmt = $pdo->prepare("INSERT INTO keywords (word) VALUES (?) ON CONFLICT (word) DO UPDATE SET active = TRUE");
+            $stmt->execute([$word]);
+            $msg = "Keyword agregada: " . htmlspecialchars($word);
+        }
+    } elseif ($action === 'delete' && !empty($_POST['id'])) {
+        $stmt = $pdo->prepare("DELETE FROM keywords WHERE id = ?");
+        $stmt->execute([(int)$_POST['id']]);
+        $msg = "Keyword eliminada";
+    } elseif ($action === 'toggle' && !empty($_POST['id'])) {
+        $stmt = $pdo->prepare("UPDATE keywords SET active = NOT active WHERE id = ?");
+        $stmt->execute([(int)$_POST['id']]);
+        $msg = "Keyword actualizada";
+    }
+}
+
+$keywords_all = $pdo->query("SELECT id, word, active FROM keywords ORDER BY id")->fetchAll(PDO::FETCH_ASSOC);
+$active_keywords = array_filter($keywords_all, fn($k) => $k['active']);
+$active_keyword_words = array_map(fn($k) => $k['word'], $active_keywords);
+
+// --- Filters ---
 $days = isset($_GET['d']) ? min(365, max(1, (int)$_GET['d'])) : 20;
 $source = $_GET['source'] ?? '';
 $remote = $_GET['remote'] ?? '';
 $search = $_GET['q'] ?? '';
+$kw_filter = $_GET['kw'] ?? '';
 
 $where = ["created_at >= NOW() - make_interval(days => $days)"];
 $params = [];
@@ -34,6 +69,12 @@ if ($search) {
     $where[] = '(LOWER(title) LIKE ? OR LOWER(company) LIKE ?)';
     $params[] = '%' . mb_strtolower($search) . '%';
     $params[] = '%' . mb_strtolower($search) . '%';
+}
+if ($kw_filter) {
+    $like = '%' . mb_strtolower($kw_filter) . '%';
+    $where[] = '(LOWER(title) LIKE ? OR LOWER(company) LIKE ?)';
+    $params[] = $like;
+    $params[] = $like;
 }
 
 $sql = 'SELECT * FROM jobs WHERE ' . implode(' AND ', $where) . " ORDER BY created_at DESC, (CASE WHEN COALESCE(salary, '') != '' THEN 0 ELSE 1 END), remote DESC NULLS LAST";
@@ -57,10 +98,10 @@ function time_ago($timestamp) {
     $then = DateTime::createFromFormat('Y-m-d H:i:s', $timestamp);
     if (!$then) return $timestamp;
     $diff = $now->getTimestamp() - $then->getTimestamp();
-    if ($diff < 60) return 'hace menos de 1 minuto';
-    if ($diff < 3600) return 'hace ' . floor($diff / 60) . ' minutos';
-    if ($diff < 86400) return 'hace ' . floor($diff / 3600) . ' horas';
-    return 'hace ' . floor($diff / 86400) . ' dias';
+    if ($diff < 60) return 'menos de 1 minuto';
+    if ($diff < 3600) return floor($diff / 60) . ' minutos';
+    if ($diff < 86400) return floor($diff / 3600) . ' horas';
+    return floor($diff / 86400) . ' dias';
 }
 
 $last_run_ts = '';
@@ -93,6 +134,71 @@ function is_new($created_at, $last_run_ts) {
 <?php if ($last_run_relative): ?>
 <p><i>Ultima busqueda: <?= htmlspecialchars($last_run_relative) ?></i></p>
 <?php endif; ?>
+
+<hr>
+
+<details>
+<summary><strong>Keywords para busqueda (<?= count($active_keywords) ?> activas)</strong></summary>
+<div style="margin:10px 0">
+
+<?php if ($msg): ?>
+<p><strong><?= $msg ?></strong></p>
+<?php endif; ?>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Keyword</th>
+      <th>Activa</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach ($keywords_all as $kw): ?>
+    <tr>
+      <td><?= htmlspecialchars($kw['word']) ?></td>
+      <td><?= $kw['active'] ? 'Si' : 'No' ?></td>
+      <td>
+        <form method="post" action="" style="display:inline">
+          <input type="hidden" name="action" value="toggle">
+          <input type="hidden" name="id" value="<?= $kw['id'] ?>">
+          <button type="submit"><?= $kw['active'] ? 'Desactivar' : 'Activar' ?></button>
+        </form>
+      </td>
+      <td>
+        <form method="post" action="" style="display:inline" onsubmit="return confirm('Eliminar keyword?')">
+          <input type="hidden" name="action" value="delete">
+          <input type="hidden" name="id" value="<?= $kw['id'] ?>">
+          <button type="submit">Eliminar</button>
+        </form>
+      </td>
+    </tr>
+    <?php endforeach; ?>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="4">
+        <form method="post" action="">
+          <input type="hidden" name="action" value="add">
+          <input type="text" name="word" placeholder="Nueva keyword..." required>
+          <button type="submit">Agregar</button>
+        </form>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+
+<p>Keywords activas:
+<?php foreach ($active_keyword_words as $w): ?>
+  <a href="?kw=<?= urlencode($w) ?>&d=<?= $days ?>"><?= htmlspecialchars($w) ?></a>&nbsp;
+<?php endforeach; ?>
+<?php if ($kw_filter): ?>
+  | <a href="?d=<?= $days ?>">Limpiar filtro</a>
+<?php endif; ?>
+</p>
+</div>
+</details>
 
 <hr>
 

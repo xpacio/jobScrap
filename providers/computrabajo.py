@@ -19,6 +19,12 @@ class ComputrabajoProvider(Provider):
         "Accept": "text/html,application/xhtml+xml",
     }
 
+    BROAD_QUERY = "sistemas+tecnologia+infraestructura+informatica+devops+linux"
+
+    def __init__(self):
+        self._all_jobs: List[Job] = []
+        self._loaded = False
+
     @property
     def name(self) -> str:
         return "computrabajo"
@@ -26,14 +32,28 @@ class ComputrabajoProvider(Provider):
     def search(
         self, keyword: str, location: str, max_results: int = 30
     ) -> List[Job]:
-        kw = keyword.replace(" ", "+")
-        url = f"{self.BASE_URL}/ofertas-de-trabajo/?q={kw}"
+        if not self._loaded:
+            self._all_jobs = self._fetch_all()
+            self._loaded = True
+
+        kw_lower = keyword.lower()
+        words = [w for w in kw_lower.split() if len(w) > 2]
+        matched = []
+        for job in self._all_jobs:
+            if len(matched) >= max_results:
+                break
+            searchable = f"{job.title} {job.company}".lower()
+            if kw_lower in searchable or any(w in searchable for w in words):
+                matched.append(job)
+        return matched
+
+    def _fetch_all(self) -> List[Job]:
+        url = f"{self.BASE_URL}/ofertas-de-trabajo/?q={self.BROAD_QUERY}"
 
         try:
             resp = requests.get(url, headers=self.HEADERS, timeout=15)
             resp.raise_for_status()
-        except requests.RequestException as e:
-            print(f"  [!] Error fetching Computrabajo: {e}")
+        except requests.RequestException:
             return []
 
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -43,9 +63,6 @@ class ComputrabajoProvider(Provider):
         for article in soup.find_all(
             "article", class_=lambda c: c and "box_offer" in str(c)
         ):
-            if len(jobs) >= max_results:
-                break
-
             title_link = article.select_one("h2 a")
             if not title_link:
                 continue
@@ -67,7 +84,7 @@ class ComputrabajoProvider(Provider):
             company = company_el.get_text(strip=True) if company_el else ""
 
             loc_ps = article.select("p.fs16.fc_base.mt5")
-            location = "México"
+            location = "Mexico"
             for lp in loc_ps:
                 if "dFlex" not in (lp.get("class") or []):
                     span = lp.select_one("span.mr10")
@@ -85,28 +102,21 @@ class ComputrabajoProvider(Provider):
             is_remote = any(
                 w in text
                 for w in [
-                    "remoto",
-                    "home office",
-                    "homeoffice",
-                    "desde casa",
-                    "100% remoto",
-                    "trabajo remoto",
-                    "remota",
+                    "remoto", "home office", "homeoffice",
+                    "desde casa", "100% remoto", "trabajo remoto", "remota",
                 ]
             )
-            is_hibrido = any(w in text for w in ["híbrido", "hibrido", "mixto"])
+            is_hibrido = any(w in text for w in ["hibrido", "híbrido", "mixto"])
 
-            jobs.append(
-                Job(
-                    title=title,
-                    company=company,
-                    location=location,
-                    url=full_url,
-                    source="computrabajo",
-                    salary=salary,
-                    date_posted=date_raw,
-                    remote=is_remote or is_hibrido,
-                )
-            )
+            jobs.append(Job(
+                title=title,
+                company=company,
+                location=location,
+                url=full_url,
+                source="computrabajo",
+                salary=salary,
+                date_posted=date_raw,
+                remote=is_remote or is_hibrido,
+            ))
 
         return jobs

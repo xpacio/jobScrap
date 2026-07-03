@@ -674,3 +674,1410 @@
 └──┴─────────────────────────────┴───────────────┴──────────┴─────────┴──┴─────┘
 
 🌐 Reporte HTML generado: public/jobs.html
+
+🔍 Buscando en REMOTEOK...
+  Buscando 'Linux administrator'...  'Linux administrator' → 1 encontrados, 0 nuevos
+  Buscando 'SysAdmin'...  'SysAdmin' → 0 encontrados, 0 nuevos
+  Buscando 'System Administrator'...  'System Administrator' → 1 encontrados, 0 nuevos
+  Buscando 'Infrastructure Engineer'...  'Infrastructure Engineer' → 30 encontrados, 1 nuevos
+  Buscando 'DevOps'...  'DevOps' → 0 encontrados, 0 nuevos
+  Buscando 'PostgreSQL DBA'...  'PostgreSQL DBA' → 0 encontrados, 0 nuevos
+  Buscando 'Administrador de sistemas'...  'Administrador de sistemas' → 0 encontrados, 0 nuevos
+  Buscando 'Bash scripting Linux'...  'Bash scripting Linux' → 0 encontrados, 0 nuevos
+  Buscando 'Azure administration'...  'Azure administration' → 1 encontrados, 0 nuevos
+  Buscando 'Coordinador de infraestructura'...  'Coordinador de infraestructura' → 0 encontrados, 0 nuevos
+
+🔍 Buscando en WEWORKREMOTELY...
+  Buscando 'Linux administrator'...  'Linux administrator' → 2 encontrados, 0 nuevos
+  Buscando 'SysAdmin'...  'SysAdmin' → 0 encontrados, 0 nuevos
+  Buscando 'System Administrator'...  'System Administrator' → 8 encontrados, 0 nuevos
+  Buscando 'Infrastructure Engineer'...  'Infrastructure Engineer' → 30 encontrados, 0 nuevos
+  Buscando 'DevOps'...  'DevOps' → 22 encontrados, 0 nuevos
+  Buscando 'PostgreSQL DBA'...  'PostgreSQL DBA' → 1 encontrados, 0 nuevos
+  Buscando 'Administrador de sistemas'...  'Administrador de sistemas' → 0 encontrados, 0 nuevos
+  Buscando 'Bash scripting Linux'...  'Bash scripting Linux' → 1 encontrados, 0 nuevos
+  Buscando 'Azure administration'...  'Azure administration' → 0 encontrados, 0 nuevos
+  Buscando 'Coordinador de infraestructura'...  'Coordinador de infraestructura' → 0 encontrados, 0 nuevos
+
+🔍 Buscando en COMPUTRABAJO...
+  Buscando 'Linux administrator'...  'Linux administrator' → 20 encontrados, 2 nuevos
+  Buscando 'SysAdmin'...  'SysAdmin' → 6 encontrados, 0 nuevos
+  Buscando 'System Administrator'...  'System Administrator' → 20 encontrados, 0 nuevos
+  Buscando 'Infrastructure Engineer'...  'Infrastructure Engineer' → 14 encontrados, 0 nuevos
+  Buscando 'DevOps'...  'DevOps' → 20 encontrados, 1 nuevos
+  Buscando 'PostgreSQL DBA'...  'PostgreSQL DBA' → 1 encontrados, 0 nuevos
+  Buscando 'Administrador de sistemas'...  'Administrador de sistemas' → 20 encontrados, 2 nuevos
+  Buscando 'Bash scripting Linux'...  'Bash scripting Linux' → 10 encontrados, 0 nuevos
+  Buscando 'Azure administration'...  'Azure administration' → 3 encontrados, 0 nuevos
+  Buscando 'Coordinador de infraestructura'...  'Coordinador de infraestructura' → 20 encontrados, 1 nuevos
+
+🔍 Buscando en TRABAJOORG...
+  Buscando 'Linux administrator'...  'Linux administrator' → 20 encontrados, 0 nuevos
+  Buscando 'SysAdmin'...  'SysAdmin' → 20 encontrados, 0 nuevos
+  Buscando 'System Administrator'...  'System Administrator' → 20 encontrados, 0 nuevos
+  Buscando 'Infrastructure Engineer'...  'Infrastructure Engineer' → 20 encontrados, 0 nuevos
+  Buscando 'DevOps'...  'DevOps' → 20 encontrados, 0 nuevos
+  Buscando 'PostgreSQL DBA'...  'PostgreSQL DBA' → 20 encontrados, 0 nuevos
+  Buscando 'Administrador de sistemas'...  'Administrador de sistemas' → 20 encontrados, 0 nuevos
+  Buscando 'Bash scripting Linux'...  'Bash scripting Linux' → 20 encontrados, 0 nuevos
+  Buscando 'Azure administration'...  'Azure administration' → 20 encontrados, 0 nuevos
+  Buscando 'Coordinador de infraestructura'...  'Coordinador de infraestructura' → 20 encontrados, 0 nuevos
+
+📊 Total en DB: 206 ofertas | Esta sesión: 7 nuevas (mostrando 194 únicas)
+
+✓ 194 ofertas nuevas encontradas
+
+┏━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━┳━━┳━━━━━┓
+┃  ┃ Título                      ┃ Empresa       ┃ Ubicaci… ┃ Sueldo  ┃  ┃ Fe… ┃
+┡━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━╇━━╇━━━━━┩
+│  │ SysAdmin Linux / Soporte de │ ManpowerGroup │ Benito   │ $       │  │ Más │
+│  │ Aplicaciones                │               │ Juárez,  │ 55,000… │  │ de  │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ 30  │
+│  │                             │               │ de       │         │  │ dí  │
+│  │ SysAdmin Linux / Soporte de │ ManpowerGroup │ Benito   │ $       │  │ Más │
+│  │ Aplicaciones                │               │ Juárez,  │ 55,000… │  │ de  │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ 30  │
+│  │                             │               │ de       │         │  │ dí  │
+│  │ Administrador/a de sistemas │ talento en    │ Puebla,  │ $       │  │ Más │
+│  │                             │ accion        │ Puebla   │ 12,000… │  │ de  │
+│  │                             │               │          │ (Mensu  │  │ 30  │
+│  │                             │               │          │         │  │ dí  │
+│  │ Software Engineer           │ ManpowerGroup │ Miguel   │ Remoto  │  │ Más │
+│  │                             │               │ Hidalgo, │         │  │ de  │
+│  │                             │               │ Ciudad   │         │  │ 30  │
+│  │                             │               │ de       │         │  │ dí  │
+│  │ Ingeniero de Fibra Óptica   │ Yupana        │ Hermosi… │ -       │  │ Más │
+│  │                             │ Mexico, S de  │ Sonora   │         │  │ de  │
+│  │                             │ R.L de C.V    │          │         │  │ 30  │
+│  │                             │               │          │         │  │ dí  │
+│  │ Administrador de control de │ IROX IT       │ León,    │ $       │  │ Más │
+│  │ versiones TI                │               │ Guanaju… │ 22,000… │  │ de  │
+│  │                             │               │          │ (Mensu  │  │ 30  │
+│  │                             │               │          │         │  │ dí  │
+│  │ Recepcionista               │ Hospital      │ Naucalp… │ -       │  │ Más │
+│  │                             │ Azura         │ de       │         │  │ de  │
+│  │                             │               │ Juárez,  │         │  │ 30  │
+│  │                             │               │ Esta     │         │  │ dí  │
+│  │ Cajero administrativo       │ Hospital      │ Naucalp… │ -       │  │ Más │
+│  │                             │ Azura         │ de       │         │  │ de  │
+│  │                             │               │ Juárez,  │         │  │ 30  │
+│  │                             │               │ Esta     │         │  │ dí  │
+│  │ Coordinador Tesorería       │ DNA           │ Álvaro   │ -       │  │ Más │
+│  │                             │ INTERNATIONAL │ Obregón, │         │  │ de  │
+│  │                             │               │ Ciudad   │         │  │ 30  │
+│  │                             │               │ de       │         │  │ dí  │
+│  │ Montacarguista (Miguel      │ Link-Worldwi… │ Parral,  │ -       │  │ Ha… │
+│  │ Hidalgo)                    │               │ Chihuah… │         │  │ 2   │
+│  │                             │               │ México   │         │  │ ho… │
+│  │ Conduce con la app:         │ Link-Worldwi… │ Sahuara… │ -       │  │ Ha… │
+│  │ ingresos rápidos y horario  │               │ Sonora,  │         │  │ 2   │
+│  │ a tu med                    │               │ México   │         │  │ ho… │
+│  │ Strategic Cost Accounting   │ Link-Worldwi… │ State of │ -       │  │ Ha… │
+│  │ Leader for Plant            │               │ Mexico,  │         │  │ 2   │
+│  │ Profitabilit                │               │ State of │         │  │ ho… │
+│  │ National Sales Director:    │ Link-Worldwi… │ Valle de │ -       │  │ Ha… │
+│  │ Channel Growth              │               │ Chalco,  │         │  │ 2   │
+│  │                             │               │ State of │         │  │ ho… │
+│  │ Ingeniero Metalúrgico En    │ Link-Worldwi… │ Ecatepec │ -       │  │ Ha… │
+│  │ Compras                     │               │ de       │         │  │ 2   │
+│  │                             │               │ Morelos, │         │  │ ho… │
+│  │                             │               │ Esta     │         │  │     │
+│  │ Analista de Costos y        │ Link-Worldwi… │ Ciénega, │ -       │  │ Ha… │
+│  │ Presupuestos para Obras     │               │ Jalisco, │         │  │ 2   │
+│  │                             │               │ México   │         │  │ ho… │
+│  │ Asistente Administrativo de │ Link-Worldwi… │ Mexico   │ -       │  │ Ha… │
+│  │ Rayos X — Mañanas, Presenci │               │ City,    │         │  │ 2   │
+│  │                             │               │ Mexico   │         │  │ ho… │
+│  │                             │               │ City     │         │  │     │
+│  │ Almacenista Retail con      │ Link-Worldwi… │ Monterr… │ -       │  │ Ha… │
+│  │ Comisiones y Beneficios     │               │ Nuevo    │         │  │ 2   │
+│  │                             │               │ Leon, Mé │         │  │ ho… │
+│  │ Asistente Administrativo de │ Link-Worldwi… │ Guerrer… │ -       │  │ Ha… │
+│  │ RR. HH. – Crecimiento y Ben │               │ Coahuil… │         │  │ 2   │
+│  │                             │               │ Méxic    │         │  │ ho… │
+│  │ Reclutador Masivo, Sueldo   │ Link-Worldwi… │ Santiago │ -       │  │ Ha… │
+│  │ Base Bonos Contrato         │               │ de       │         │  │ 2   │
+│  │ inmediato                   │               │ Queréta… │         │  │ ho… │
+│  │                             │               │ Qu       │         │  │     │
+│  │ Payments Operations Lead    │ Cervin        │ Mexico   │ -       │  │ Ha… │
+│  │                             │               │ City,    │         │  │ 2   │
+│  │                             │               │ Mexico   │         │  │ ho… │
+│  │                             │               │ City     │         │  │     │
+│  │ Recepcionista Bilingüe      │ Link-Worldwi… │ Valle de │ -       │  │ Ha… │
+│  │                             │               │ Chalco,  │         │  │ 2   │
+│  │                             │               │ State of │         │  │ ho… │
+│  │ Maniobrista Montacarguista  │ Link-Worldwi… │ Coacalco │ -       │  │ Ha… │
+│  │                             │               │ de       │         │  │ 2   │
+│  │                             │               │ Berrioz… │         │  │ ho… │
+│  │ Auxiliar de Producción      │ Link-Worldwi… │ State of │ -       │  │ Ha… │
+│  │ Impresión — Turnos 12h,     │               │ Mexico,  │         │  │ 2   │
+│  │ Prestaci                    │               │ State of │         │  │ ho… │
+│  │ Global Data Engineer —      │ NielsenIQ     │ State of │ -       │  │ Ha… │
+│  │ Scalable Pipelines          │               │ Mexico,  │         │  │ 2   │
+│  │                             │               │ State of │         │  │ ho… │
+│  │ Accounts Payable Specialist │ Link-Worldwi… │ Guerrer… │ -       │  │ Ha… │
+│  │ — Timely Vendor Payments    │               │ Guerrer… │         │  │ 2   │
+│  │                             │               │ Méxic    │         │  │ ho… │
+│  │ Cocinero/a - Turnos Mañana  │ Link-Worldwi… │ Guerrer… │ -       │  │ Ha… │
+│  │ o Tarde | Propinas          │               │ Guerrer… │         │  │ 2   │
+│  │                             │               │ Méxic    │         │  │ ho… │
+│  │ Líder de Finanzas y         │ La Madeleine  │ Naucalp… │ -       │  │ Ha… │
+│  │ Contabilidad | Optimiza     │ Products      │ de       │         │  │ 2   │
+│  │ Flujo de Ca                 │               │ Juárez,  │         │  │ ho… │
+│  │                             │               │ Stat     │         │  │     │
+│  │ Gana Chats Asesor Cobranza  │ Link-Worldwi… │ Zitlala, │ -       │  │ Ha… │
+│  │                             │               │ Guerrer… │         │  │ 2   │
+│  │                             │               │ México   │         │  │ ho… │
+│  │ Analyst Senior Analyst      │ PSC           │ Heroica  │ -       │  │ Ha… │
+│  │ Senior                      │ Industries    │ Veracru… │         │  │ 2   │
+│  │                             │               │ Veracru  │         │  │ ho… │
+│  │ Asistente Ejecutivo         │ SISTEMA       │ Guadala… │ $       │  │ Ha… │
+│  │ Comercial                   │ CORPORATIVO   │ Jalisco  │ 10,000… │  │ 7   │
+│  │                             │ PROULEX CO    │          │ (Mensu  │  │ hor │
+│  │ Líder de Proyecto PMO       │ Grupo ONO     │ Álvaro   │ $       │  │ Ha… │
+│  │                             │               │ Obregón, │ 35,000… │  │ 7   │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ hor │
+│  │                             │               │ de       │         │  │     │
+│  │ Desarrollador Backend .NET  │ TECMOIN       │ Tlalpan, │ -       │  │ Ha… │
+│  │ Senior (C#                  │               │ Ciudad   │         │  │ 7   │
+│  │                             │               │ de       │         │  │ hor │
+│  │                             │               │ México   │         │  │     │
+│  │ Ingeniero Sr de Cloud Azure │ AIT           │ Benito   │ $       │  │ Ha… │
+│  │                             │ Vanguardia    │ Juárez,  │ 59,999… │  │ 7   │
+│  │                             │ Tecnológica   │ Ciudad   │ (Mensu  │  │ hor │
+│  │                             │               │ de       │         │  │     │
+│  │ Administrador contador      │ Montaño       │ Tlalpan, │ -       │  │ Ha… │
+│  │                             │ Martinez y    │ Ciudad   │         │  │ 7   │
+│  │                             │ Asociados,    │ de       │         │  │ hor │
+│  │                             │               │ México   │         │  │     │
+│  │ Senior Network and Segurity │ Medina        │ El       │ -       │  │ Ha… │
+│  │ Engineer                    │ Consultores   │ Marqués, │         │  │ 7   │
+│  │                             │               │ Queréta… │         │  │ día │
+│  │ Ingeniero de Compras /      │ FOXCONN GDL   │ San      │ -       │  │ Ha… │
+│  │ Procurement Specialist      │               │ Pedro    │         │  │ 7   │
+│  │                             │               │ Tlaquep… │         │  │ día │
+│  │                             │               │ Ja       │         │  │     │
+│  │ Desarrollador               │ High Power de │ Tlajomu… │ $       │  │ Ha… │
+│  │                             │ Mexico        │ de       │ 20,000… │  │ 7   │
+│  │                             │               │ Zúñiga,  │ (Mensu  │  │ día │
+│  │                             │               │ Jal      │         │  │     │
+│  │ Jira System Administrator   │ NOV SHARED    │ Monterr… │ Presen… │  │ Ha… │
+│  │                             │ SERVICES      │ Nuevo    │ y remot │  │ 6   │
+│  │                             │ MEXICO        │ León     │         │  │ hor │
+│  │ Consultor(a) de             │ -             │ Zapopan, │ $       │  │ Ha… │
+│  │ Implementación de Software  │               │ Jalisco  │ 22,000… │  │ 6   │
+│  │ B2B                         │               │          │ (Mensu  │  │ hor │
+│  │ Engineering Manager         │ -             │ Hermosi… │ -       │  │ Ha… │
+│  │                             │               │ Sonora   │         │  │ 6   │
+│  │                             │               │          │         │  │ hor │
+│  │ Consultor(a) de Sistemas    │ ALPHA DEVOPS  │ Pachuca  │ -       │  │ Ha… │
+│  │ Aspel                       │ COMPANY       │ de Soto, │         │  │ 6   │
+│  │                             │               │ Hidalgo  │         │  │ hor │
+│  │ Dibujante Con experiencia   │ -             │ Tlalnep… │ $       │  │ Ha… │
+│  │                             │               │ de Baz,  │ 13,000… │  │ 6   │
+│  │                             │               │ Esta     │ (Mensu  │  │ hor │
+│  │ Coordinador de              │ SOLUCIONES EN │ Zapopan, │ -       │  │ Ha… │
+│  │ Ciberseguridad e            │ TECNOLOGIA Y  │ Jalisco  │         │  │ 6   │
+│  │ Infraestructura             │ DES           │          │         │  │ hor │
+│  │ Coordinador de Proyectos    │ Terminal      │ Colón,   │ $       │  │ Ha… │
+│  │                             │ Logistics     │ Queréta… │ 28,000… │  │ 6   │
+│  │                             │               │          │ (Mensu  │  │ hor │
+│  │ Administrador de Sistemas   │ Ituran        │ Cuauhté… │ Presen… │  │ Ha… │
+│  │ Regional Senior             │               │ Ciudad   │ y remot │  │ 6   │
+│  │                             │               │ de Méx   │         │  │ día │
+│  │ Especialista en Odoo ERP /  │ Human Staff   │ Torreón, │ -       │  │ Ha… │
+│  │ Administrador de Sistemas   │               │ Coahuila │         │  │ 6   │
+│  │ ER                          │               │          │         │  │ día │
+│  │ Administrador Linux         │ Universidad   │ Naucalp… │ $       │  │ Ha… │
+│  │                             │ Tecnológica   │ de       │ 36,000… │  │ 5   │
+│  │                             │ Latino        │ Juárez,  │ (Mensu  │  │ hor │
+│  │                             │               │ Esta     │         │  │     │
+│  │ Administrador/a de sistemas │ Soriana       │ San      │ $       │  │ Ha… │
+│  │                             │               │ Pedro    │ 16,449… │  │ 5   │
+│  │                             │               │ Tlaquep… │ (Mensu  │  │ día │
+│  │                             │               │ Ja       │         │  │     │
+│  │ Data Architect              │ Lumina        │ Monterr… │ Presen… │  │ Ha… │
+│  │                             │ Software      │ Nuevo    │ y remot │  │ 5   │
+│  │                             │               │ León     │         │  │ día │
+│  │ BI Developer Senior (MS     │ Lumina        │ Monterr… │ Presen… │  │ Ha… │
+│  │ Fabric)                     │ Software      │ Nuevo    │ y remot │  │ 5   │
+│  │                             │               │ León     │         │  │ día │
+│  │ Supervisor de Obra civil    │ Grupo         │ Benito   │ -       │  │ Ha… │
+│  │                             │ Diagnóstico   │ Juárez,  │         │  │ 5   │
+│  │                             │ Aries         │ Ciudad   │         │  │ día │
+│  │                             │               │ de       │         │  │     │
+│  │ Ejecutivo de ventas         │ SIASA         │ Mérida,  │ -       │  │ Ha… │
+│  │                             │               │ Yucatán  │         │  │ 4   │
+│  │                             │               │          │         │  │ hor │
+│  │ Coordinador de              │ -             │ Mérida,  │ $       │  │ Ha… │
+│  │ Infraestructura y Soporte   │               │ Yucatán  │ 15,000… │  │ 4   │
+│  │ Técnico                     │               │          │ (Mensu  │  │ hor │
+│  │ Coordinador de              │ PI Soluciones │ Cuautit… │ $       │  │ Ha… │
+│  │ infraestructura             │ Administrati… │ Estado   │ 25,000… │  │ 4   │
+│  │                             │               │ de Méx   │ (Mensu  │  │ hor │
+│  │ Coordinador legal y         │ Terminal      │ Colón,   │ $       │  │ Ha… │
+│  │ gestoria                    │ Logistics     │ Queréta… │ 18,000… │  │ 4   │
+│  │                             │               │          │ (Mensu  │  │ hor │
+│  │ Administrador de Servidores │ MTI           │ Queréta… │ -       │  │ Ha… │
+│  │ Linux                       │ Consultoria   │ Queréta… │         │  │ 4   │
+│  │                             │               │          │         │  │ día │
+│  │ Sysadmin Linux              │ -             │ Queréta… │ -       │  │ Ha… │
+│  │                             │               │ Queréta… │         │  │ 4   │
+│  │                             │               │          │         │  │ día │
+│  │ SysAdmin AWS                │ Blackcore ®   │ León,    │ -       │  │ Ha… │
+│  │                             │               │ Guanaju… │         │  │ 4   │
+│  │                             │               │          │         │  │ día │
+│  │ Administrador de Sistemas   │ -             │ Tuxtla   │ $       │  │ Ha… │
+│  │                             │               │ Gutiérr… │ 9,000.… │  │ 4   │
+│  │                             │               │ Chiapas  │ (Mensua │  │ día │
+│  │ Analista sistemas           │ Grupo         │ Tlalpan, │ $       │  │ Ha… │
+│  │ administrador de            │ Financiero    │ Ciudad   │ 16,000… │  │ 4   │
+│  │ aplicaciones                │ Inbursa Corpo │ de       │ (Mensu  │  │ día │
+│  │                             │               │ México   │         │  │     │
+│  │ Cybersecurity Analyst       │ VITON SAS DE  │ Álvaro   │ $       │  │ Ha… │
+│  │                             │ CV            │ Obregón, │ 35,000… │  │ 4   │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ día │
+│  │                             │               │ de       │         │  │     │
+│  │ Coordinador de              │ -             │ Boca del │ $       │  │ Ha… │
+│  │ Mantenimiento e             │               │ Río,     │ 33,000… │  │ 4   │
+│  │ Infraestructura             │               │ Veracruz │ (Mensu  │  │ día │
+│  │ Site Reliability Engineer   │ NOV SHARED    │ Monterr… │ Presen… │  │ Ha… │
+│  │                             │ SERVICES      │ Nuevo    │ y remot │  │ 3   │
+│  │                             │ MEXICO        │ León     │         │  │ hor │
+│  │ Ingeniero de Procesos C     │ MITSUI & CO.  │ San      │ -       │  │ Ha… │
+│  │                             │ INFRASTRUCTU… │ Pedro    │         │  │ 3   │
+│  │                             │ SO            │ Garza    │         │  │ hor │
+│  │                             │               │ García,  │         │  │     │
+│  │                             │               │ N        │         │  │     │
+│  │ Desarrollador Sr            │ -             │ Miguel   │ $       │  │ Ha… │
+│  │                             │               │ Hidalgo, │ 50,000… │  │ 3   │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ hor │
+│  │                             │               │ de       │         │  │     │
+│  │ Sap Basis Senior            │ TEVA RH       │ Cuauhté… │ Remoto  │  │ Ha… │
+│  │                             │               │ Ciudad   │         │  │ 3   │
+│  │                             │               │ de Méx   │         │  │ día │
+│  │ SysAdmin Windows            │ KODE IT       │ Tlalpan, │ $       │  │ Ha… │
+│  │                             │               │ Ciudad   │ 27,000… │  │ 3   │
+│  │                             │               │ de       │ (Mensu  │  │ día │
+│  │                             │               │ México   │         │  │     │
+│  │ Administrador de Sistemas   │ GRUPO         │ Benito   │ Remoto  │  │ Ha… │
+│  │ Jr                          │ EMPRESARIAL   │ Juárez,  │         │  │ 3   │
+│  │                             │ MMB           │ Ciudad   │         │  │ día │
+│  │                             │               │ de       │         │  │     │
+│  │ Senior NetSuite Admin /     │ LATAM         │ México   │ Remoto  │  │ Ha… │
+│  │ Business Systems Analyst of │ Management    │          │         │  │ 3   │
+│  │ ERP                         │ Recruitment   │          │         │  │ día │
+│  │ Operations Administrator    │ Moore Orozco  │ Chihuah… │ $       │  │ Ha… │
+│  │                             │ Medina S.C.   │ Chihuah… │ 28,000… │  │ 3   │
+│  │                             │               │          │ (Mensu  │  │ día │
+│  │ AI Mobile Software Engineer │ TRIMBLE       │ Mexical… │ $       │  │ Ha… │
+│  │                             │ CONSULTING    │ Baja     │ 60,000… │  │ 3   │
+│  │                             │ TECHNOLOGIE   │ Califor… │ (Mensu  │  │ día │
+│  │ Ingeniero Sr de base de     │ Reto          │ Benito   │ -       │  │ Ha… │
+│  │ datos                       │ Industrial    │ Juárez,  │         │  │ 3   │
+│  │                             │ S.A. de C.V.  │ Ciudad   │         │  │ día │
+│  │                             │               │ de       │         │  │     │
+│  │ Operador Batch Control M    │ Indra         │ Miguel   │ Remoto  │  │ Ha… │
+│  │                             │ Sistemas      │ Hidalgo, │         │  │ 3   │
+│  │                             │ México        │ Ciudad   │         │  │ día │
+│  │                             │               │ de       │         │  │     │
+│  │ Administrador de            │ TECMOIN       │ Tlalpan, │ -       │  │ Ha… │
+│  │ Infraestructura TI          │               │ Ciudad   │         │  │ 3   │
+│  │                             │               │ de       │         │  │ día │
+│  │                             │               │ México   │         │  │     │
+│  │ Supervisor de Mantenimiento │ Galletas      │ Mérida,  │ $       │  │ Ha… │
+│  │ a Infraestructura           │ Dondé         │ Yucatán  │ 19,000… │  │ 3   │
+│  │                             │               │          │ (Mensu  │  │ día │
+│  │ Coordinador de mtto de      │ TV CABLE DEL  │ Durango, │ $       │  │ Ha… │
+│  │ infraestructura de red de   │ GUADIANA SA   │ Durango  │ 20,000… │  │ 3   │
+│  │ transp                      │ DE CV         │          │ (Mensu  │  │ día │
+│  │ Supervisor de redes         │ SDC NET       │ Benito   │ $       │  │ Ha… │
+│  │                             │               │ Juárez,  │ 20,000… │  │ 3   │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ día │
+│  │                             │               │ de       │         │  │     │
+│  │ Supervisor Eléctrico e      │ TBC de México │ San Luis │ $       │  │ Ha… │
+│  │ infraestructura             │               │ Potosí,  │ 18,000… │  │ 23  │
+│  │                             │               │ San Luis │ (Mensu  │  │ ho  │
+│  │ Coordinador de              │ Palace        │ Benito   │ -       │  │ Ha… │
+│  │ Infraestructura             │ Resorts       │ Juárez,  │         │  │ 22  │
+│  │                             │               │ Quintana │         │  │ ho  │
+│  │                             │               │ R        │         │  │     │
+│  │ Software Engineer Manager   │ -             │ Puebla,  │ $       │  │ Ha… │
+│  │                             │               │ Puebla   │ 72,000… │  │ 2   │
+│  │                             │               │          │ (Mensu  │  │ hor │
+│  │ Ventas B2B GPS o Software   │ Operadora de  │ Naucalp… │ $       │  │ Ha… │
+│  │                             │ Rastreos UDA  │ de       │ 25,000… │  │ 2   │
+│  │                             │ S.A           │ Juárez,  │ (Mensu  │  │ hor │
+│  │                             │               │ Esta     │         │  │     │
+│  │ Supervisor de Sistema       │ Universidad   │ León,    │ $       │  │ Ha… │
+│  │ Escolar                     │ Insurgentes   │ Guanaju… │ 12,700… │  │ 2   │
+│  │                             │               │          │ (Mensu  │  │ hor │
+│  │ Administrador del sistema   │ CENTRO DE     │ Cuautla… │ $       │  │ Ha… │
+│  │ de gestión ambiental        │ DISTRIBUCION  │ Puebla   │ 9,000.… │  │ 2   │
+│  │                             │ INDUSTR       │          │ (Mensua │  │ día │
+│  │ Administrador de sistema    │ MAOSA         │ Morelia, │ -       │  │ Ha… │
+│  │ Intelisis                   │               │ Michoac… │         │  │ 2   │
+│  │                             │               │          │         │  │ día │
+│  │ Software Engineer           │ TRIMBLE       │ Mexical… │ $       │  │ Ha… │
+│  │                             │ CONSULTING    │ Baja     │ 50,000… │  │ 2   │
+│  │                             │ TECHNOLOGIE   │ Califor… │ (Mensu  │  │ día │
+│  │ Cloud Devops Jr.            │ Smart         │ Cuauhté… │ $       │  │ Ha… │
+│  │                             │ Quallity      │ Ciudad   │ 14,000… │  │ 2   │
+│  │                             │ Software      │ de Méx   │ (Mensu  │  │ día │
+│  │ Azure DevOps                │ Tata          │ Queréta… │ Presen… │  │ Ha… │
+│  │                             │ Consultancy   │ Queréta… │ y remot │  │ 2   │
+│  │                             │ Services de M │          │         │  │ día │
+│  │ Líder de ingeniería         │ Soluciones    │ Iztapal… │ $       │  │ Ha… │
+│  │                             │ Kabec, S.A.   │ Ciudad   │ 35,000… │  │ 2   │
+│  │                             │ de C.V.       │ de Méx   │ (Mensu  │  │ día │
+│  │ Arquitecto de Soluciones    │ Lumina        │ Monterr… │ Presen… │  │ Ha… │
+│  │                             │ Software      │ Nuevo    │ y remot │  │ 2   │
+│  │                             │               │ León     │         │  │ día │
+│  │ Analista de Soporte e       │ Blackcore ®   │ León,    │ -       │  │ Ha… │
+│  │ Infraestructura Jr.         │               │ Guanaju… │         │  │ 2   │
+│  │                             │               │          │         │  │ día │
+│  │ Supervisor de Urbanización  │ Grupo-Ruba    │ Mexical… │ -       │  │ Ha… │
+│  │ / Auditor Infraestructura   │               │ Baja     │         │  │ 2   │
+│  │                             │               │ Califor… │         │  │ día │
+│  │ Supervisor de               │ Palace        │ Benito   │ -       │  │ Ha… │
+│  │ Infraestructura             │ Resorts       │ Juárez,  │         │  │ 2   │
+│  │                             │               │ Quintana │         │  │ día │
+│  │                             │               │ R        │         │  │     │
+│  │ Coordinador de TI e         │ Probecarios   │ Cuauhté… │ $       │  │ Ha… │
+│  │ infraestructura, Cuauhtémoc │               │ Ciudad   │ 25,000… │  │ 2   │
+│  │                             │               │ de Méx   │ (Mensu  │  │ día │
+│  │ Coordinador de Proyectos e  │ DISTRIBUIDORA │ Salaman… │ $       │  │ Ha… │
+│  │ Infraestructura Física y    │ SUCAHERZA     │ Guanaju… │ 17,223… │  │ 2   │
+│  │ Man                         │               │          │ (Mensu  │  │ día │
+│  │ Coordinador de              │ -             │ Iztapal… │ -       │  │ Ha… │
+│  │ Infraestructura, voz y      │               │ Ciudad   │         │  │ 2   │
+│  │ datos                       │               │ de Méx   │         │  │ día │
+│  │ Coordinador de Sistemas y   │ MENDOZA       │ Cuautit… │ $       │  │ Ha… │
+│  │ Desarrollo de Software      │ SHOOTING      │ Izcalli, │ 24,000… │  │ 19  │
+│  │                             │ SPORTS        │ Estad    │ (Mensu  │  │ ho  │
+│  │ QA Automatización           │ Grupo ONO     │ Álvaro   │ $       │  │ Ha… │
+│  │                             │               │ Obregón, │ 28,000… │  │ 18  │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ ho  │
+│  │                             │               │ de       │         │  │     │
+│  │ Contador administrador      │ GM            │ Atizapán │ $       │  │ Ha… │
+│  │                             │ CORPORATIVO   │ de       │ 20,000… │  │ 17  │
+│  │                             │ INDUSTRIAL    │ Zaragoz… │ (Mensu  │  │ ho  │
+│  │                             │               │ Est      │         │  │     │
+│  │ Desarrollador GoLang        │ Capital       │ Benito   │ $       │  │ Ha… │
+│  │                             │ Empresarial   │ Juárez,  │ 60,000… │  │ 11  │
+│  │                             │ Horizonte     │ Ciudad   │ (Mensu  │  │ ho  │
+│  │                             │               │ de       │         │  │     │
+│  │ Líder Técnico / Project     │ Caja Popular  │ León,    │ $       │  │ Ha… │
+│  │ Manager TI (.NET)           │ Mexicana      │ Guanaju… │ 44,022… │  │ 1   │
+│  │                             │               │          │ (Mensu  │  │ hor │
+│  │ Lider de reclutamiento IT   │ -             │ Miguel   │ $       │  │ Ha… │
+│  │                             │               │ Hidalgo, │ 40,000… │  │ 1   │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ hor │
+│  │                             │               │ de       │         │  │     │
+│  │ Analista de Soporte         │ Involve RH    │ Miguel   │ $       │  │ Ha… │
+│  │                             │               │ Hidalgo, │ 28,000… │  │ 1   │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ hor │
+│  │                             │               │ de       │         │  │     │
+│  │ Coordinador/a               │ Terminal      │ Queréta… │ $       │  │ Ha… │
+│  │ administrativo y gestoría   │ Logistics     │ Queréta… │ 19,000… │  │ 1   │
+│  │                             │               │          │ (Mensu  │  │ hor │
+│  │ Administrador del Sistema   │ Plastic       │ Iztapal… │ -       │  │ Ay… │
+│  │ de Gestión de Calidad       │ Energy        │ Ciudad   │         │  │     │
+│  │                             │ Company       │ de Méx   │         │  │     │
+│  │ SysAdmin Linux              │ IDS           │ Benito   │ -       │  │ Ay… │
+│  │                             │ Comercial,    │ Juárez,  │         │  │     │
+│  │                             │ S.A. de C.V.  │ Ciudad   │         │  │     │
+│  │                             │               │ de       │         │  │     │
+│  │ Especialista Senior de      │ Capital       │ Benito   │ $       │  │ Ay… │
+│  │ Seguridad AWS               │ Empresarial   │ Juárez,  │ 60,000… │  │     │
+│  │                             │ Horizonte     │ Ciudad   │ (Mensu  │  │     │
+│  │                             │               │ de       │         │  │     │
+│  │ Senior Software Engineer    │ LEADVENTURE   │ La Paz,  │ Remoto  │  │ Ay… │
+│  │                             │               │ Estado   │         │  │     │
+│  │                             │               │ de       │         │  │     │
+│  │                             │               │ México   │         │  │     │
+│  │ Release Train Engineer (    │ ManpowerGroup │ Culiacá… │ $       │  │ Ay… │
+│  │ RTE )                       │               │ Sinaloa  │ 70,000… │  │     │
+│  │                             │               │          │ (Mensu  │  │     │
+│  │ Contador administrativo     │ RCG           │ Hermosi… │ $       │  │ Ay… │
+│  │                             │ DESARROLLOS   │ Sonora   │ 16,000… │  │     │
+│  │                             │ SA DE CV      │          │ (Mensu  │  │     │
+│  │ Integrador / Administrador  │ Citrus        │ Miguel   │ Presen… │  │ Ay… │
+│  │ Oracle NetSuite             │ Patrimonial   │ Hidalgo, │ y remot │  │     │
+│  │                             │               │ Ciudad   │         │  │     │
+│  │                             │               │ de       │         │  │     │
+│  │ Analista de Monitoreo y     │ ESPECIALISTAS │ Benito   │ -       │  │ Ay… │
+│  │ Soporte TI                  │ EN LA         │ Juárez,  │         │  │     │
+│  │                             │ INTEGRACIO    │ Ciudad   │         │  │     │
+│  │                             │               │ de       │         │  │     │
+│  │ Administrador de Proyectos  │ ManpowerGroup │ León,    │ -       │  │ Ah… │
+│  │                             │               │ Guanaju… │         │  │     │
+│  │ Site Reliability Engineer   │ Bright Vision │ Remote   │ -       │  │ 9d  │
+│  │ (SRE)                       │ Technologies  │          │         │  │     │
+│  │ DevOps Engineer - Midnight  │ IO Global     │ Anywhere │ -       │  │ 9d  │
+│  │ Foundation                  │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps & Platform Engineer  │ Agilent       │ Anywhere │ -       │  │ 9d  │
+│  │ (AWS / CI/CD)               │ Technologies  │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps SRE - Senior or Lead │ Southwest     │ Remote   │ -       │  │ 9d  │
+│  │ (Remote Eligible)           │ Power Pool    │          │         │  │     │
+│  │ Analista de negocio y de    │ C&E Quality   │ Álvaro   │ Remoto  │  │ 5   │
+│  │ sistemas                    │ Consulting    │ Obregón, │         │  │ de  │
+│  │                             │               │ Ciudad   │         │  │ ju… │
+│  │                             │               │ de       │         │  │     │
+│  │ Product Manager II -        │ Kraken        │ Anywhere │ -       │  │ 3d  │
+│  │ Financial Systems           │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Senior DevOps Engineer      │ Qualifyze     │ Anywhere │ -       │  │ 3d  │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps Engineer             │ Win Home      │ Anywhere │ -       │  │ 3d  │
+│  │                             │ Inspection    │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Head of Customer Success    │ OnTheGoSyste… │ Anywhere │ -       │  │ 30d │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Full Stack AI Engineer      │ Reveleer      │ Anywhere │ -       │  │ 2d  │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ AI Research Engineer        │ Tether        │ Anywhere │ -       │  │ 2d  │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Senior Linux System         │ Anexia        │ Anywhere │ -       │  │ 29d │
+│  │ Engineer (M/W/D)            │ Internetdien… │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps Engineer - EMEA/US   │ BlueMatrix    │ Anywhere │ -       │  │ 29d │
+│  │ Shift                       │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Senior Solutions Engineer   │ Binance       │ Anywhere │ -       │  │ 29d │
+│  │ (API, Python, Node.JS)      │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Engenheiro DevOps (GitHub e │ Premiersoft   │ Anywhere │ -       │  │ 29d │
+│  │ CI/CD) | Remoto             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ UX Designer – Design System │ Lyncas        │ Anywhere │ -       │  │ 28d │
+│  │ Pleno                       │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ GxP Instrument Systems      │ AHU           │ Anywhere │ -       │  │ 25d │
+│  │ Engineer- Norwood, MA       │ Technologies  │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps Engineer (contract)  │ Covent IT     │ Anywhere │ -       │  │ 25d │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Senior Platform/Site        │ Lemon.io      │ Remote   │ -       │  │ 25d │
+│  │ Reliability Engineer        │               │          │         │  │     │
+│  │ DevOps e Platform Sênior|   │ Premiersoft   │ Anywhere │ -       │  │ 25d │
+│  │ Remoto                      │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Administrador de Sistemas   │ ManpowerGroup │ Miguel   │ Presen… │  │ 24  │
+│  │ Linux                       │               │ Hidalgo, │ y remot │  │ de  │
+│  │                             │               │ Ciudad   │         │  │ ju… │
+│  │                             │               │ de       │         │  │     │
+│  │ Staff DevOps Engineer       │ Runware       │ Anywhere │ -       │  │ 23d │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps Engineer             │ Career Team   │ Anywhere │ -       │  │ 23d │
+│  │                             │ Enterprises   │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Mid/Senior DevOps Engineer  │ Intelmatix    │ Anywhere │ -       │  │ 23d │
+│  │ (Egypt)                     │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps Virtual Development  │ HYUNDAI       │ Anywhere │ -       │  │ 23d │
+│  │ Engineer                    │ MOTORS        │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Principal DevOps Engineer – │ Revvity       │ Anywhere │ -       │  │ 22d │
+│  │ Build, Release and Cloud Au │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Staff Software Engineer     │ bunny.net     │ Anywhere │ -       │  │ 22d │
+│  │ (Magic Containers)          │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Administrador de Servidores │ ManpowerGroup │ Miguel   │ $       │  │ 22  │
+│  │                             │               │ Hidalgo, │ 32,000… │  │ de  │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ ju… │
+│  │                             │               │ de       │         │  │     │
+│  │ Software engineer           │ Sticker Mule  │ Anywhere │ -       │  │ 20d │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Business Development        │ Fresha        │ Lisboa,  │ -       │  │ 20… │
+│  │ Executive                   │               │ Lisboa,  │         │  │     │
+│  │                             │               │ Lisboa,  │         │  │     │
+│  │                             │               │ P        │         │  │     │
+│  │ Facility Maintenance        │ PriceSmart    │ Montego  │ -       │  │ 20… │
+│  │ Technician                  │               │ Bay,     │         │  │     │
+│  │ Senior AI Engineer          │ Lemon.io      │ Remote   │ $80000  │  │ 20… │
+│  │ Architect                   │               │          │ -       │  │     │
+│  │                             │               │          │ $190000 │  │     │
+│  │ Engineer 2                  │ Catalyst      │ Bengalu… │ -       │  │ 20… │
+│  │                             │ Brands India  │          │         │  │     │
+│  │ Junior UI Engineer          │ Arabian       │ Birming… │ -       │  │ 20… │
+│  │                             │ Private       │ Birming… │         │  │     │
+│  │                             │ Holdings      │ E        │         │  │     │
+│  │ Creative                    │ The Elites    │ London,  │ -       │  │ 20… │
+│  │ Orientador a Laboral        │ Ironhack      │ Madrid,  │ -       │  │ 20… │
+│  │ Freelance Remoto            │               │ Madrid,  │         │  │     │
+│  │                             │               │ Comunid… │         │  │     │
+│  │ Executive Assistant         │ EfficientAide │ Califor… │ -       │  │ 20… │
+│  │                             │               │ Califor… │         │  │     │
+│  │                             │               │ U        │         │  │     │
+│  │ Data Scientist              │ New Flyer     │ Winnipe… │ -       │  │ 20… │
+│  │                             │               │ Winnipe… │         │  │     │
+│  │                             │               │ Manit    │         │  │     │
+│  │ Resource mobiliser          │ Vrindavan     │ Mathura, │ -       │  │ 20… │
+│  │                             │ Chandrodaya   │          │         │  │     │
+│  │                             │ Mandir        │          │         │  │     │
+│  │ India posts require 17      │ The Kashmir   │ Behat,   │ -       │  │ 20… │
+│  │ Staff Car Drivers Fast      │ Monitor       │          │         │  │     │
+│  │ track you                   │               │          │         │  │     │
+│  │ Junior Product Designer     │ WealthCounse… │ Jersey   │ -       │  │ 20… │
+│  │                             │ LLC           │ City,    │         │  │     │
+│  │                             │               │ Jersey   │         │  │     │
+│  │                             │               │ City,    │         │  │     │
+│  │ Profesor a de Apoyo escolar │ Apprentus     │ Sevilla, │ -       │  │ 20… │
+│  │ Todos los niveles           │               │          │         │  │     │
+│  │ Accommodation Administrator │ Sodexo        │ Queensl… │ -       │  │ 20… │
+│  │ FIFO 14 7 Roster Cairns Que │               │ Queensl… │         │  │     │
+│  │                             │               │ A        │         │  │     │
+│  │ SVP Banking Operations      │ Nymbus        │ Jackson… │ -       │  │ 20… │
+│  │                             │               │ Jackson… │         │  │     │
+│  │ Mortgage Operations Loan    │ Wealthfront   │ New      │ -       │  │ 20… │
+│  │ Processor                   │               │ York,    │         │  │     │
+│  │                             │               │ New      │         │  │     │
+│  │                             │               │ York,    │         │  │     │
+│  │                             │               │ New Y    │         │  │     │
+│  │ Full crew                   │ Atlantic      │ Freepor… │ -       │  │ 20… │
+│  │                             │ Oceanic LLC   │          │         │  │     │
+│  │ Captain                     │ UICGS /       │ Andros   │ -       │  │ 20… │
+│  │                             │ Bowhead       │ Town,    │         │  │     │
+│  │                             │ Family of     │          │         │  │     │
+│  │                             │ Comp          │          │         │  │     │
+│  │ Vice President of Customer  │ PatientIQ     │ Chicago, │ -       │  │ 20… │
+│  │ Growth                      │               │ Chicago, │         │  │     │
+│  │                             │               │ Illinoi  │         │  │     │
+│  │ Creative Director           │ PadSplit      │ Atlanta, │ -       │  │ 20… │
+│  │                             │               │ Atlanta, │         │  │     │
+│  │                             │               │ Georgia  │         │  │     │
+│  │ Chief Financial Officer     │ Hospitable.c… │ London,  │ -       │  │ 20… │
+│  │                             │               │ London,  │         │  │     │
+│  │                             │               │ England, │         │  │     │
+│  │ Maintenance &amp; MEP       │ Scales and    │ Nassau,  │ -       │  │ 20… │
+│  │ Technician                  │ Associates    │          │         │  │     │
+│  │ Total Rewards Manager       │ PGIM Ireland  │ Letterk… │ -       │  │ 20… │
+│  │ Bid Manager                 │ Razorblue     │ Stockto… │ -       │  │ 20… │
+│  │                             │ Group         │          │         │  │     │
+│  │ Speculative                 │ Flok Health   │ Cambrid… │ -       │  │ 20… │
+│  │ LEAD                        │ ABM           │ Kilgore, │ -       │  │ 20… │
+│  │                             │ Industries    │          │         │  │     │
+│  │ Housekeeper Kabannas        │ Kabannas      │ Newcast… │ -       │  │ 20… │
+│  │ Newcastle                   │               │ Upon     │         │  │     │
+│  │                             │               │ Tyne,    │         │  │     │
+│  │ Block Operator              │ SAL TRADING   │ Smith's  │ -       │  │ 20… │
+│  │                             │ LIMITED       │ Parish,  │         │  │     │
+│  │ Physiotherapist UK          │ HealthHero    │ Brackne… │ -       │  │ 20… │
+│  │                             │               │ Brackne… │         │  │     │
+│  │                             │               │ Eng      │         │  │     │
+│  │ Graduate Business           │ Bezos.AI      │ London,  │ -       │  │ 20… │
+│  │ Operations Associate        │               │ London,  │         │  │     │
+│  │                             │               │ England, │         │  │     │
+│  │ Business Administration     │ Brainkind     │ Eastbou… │ -       │  │ 20… │
+│  │ SAP Print and output        │ ManpowerGroup │ Monterr… │ $       │  │ 19  │
+│  │ administrator               │               │ Nuevo    │ 65,400… │  │ de  │
+│  │                             │               │ León     │ (Mensu  │  │ ju… │
+│  │ SAP Basis Administrator     │ ManpowerGroup │ Monterr… │ $       │  │ 19  │
+│  │                             │               │ Nuevo    │ 65,400… │  │ de  │
+│  │                             │               │ León     │ (Mensu  │  │ ju… │
+│  │ SAP Authorization           │ ManpowerGroup │ Monterr… │ $       │  │ 19  │
+│  │ Administrator               │               │ Nuevo    │ 85,000… │  │ de  │
+│  │                             │               │ León     │ (Mensu  │  │ ju… │
+│  │ Global SAP Operations       │ ManpowerGroup │ Monterr… │ $       │  │ 19  │
+│  │ Engineer Scheduling and     │               │ Nuevo    │ 65,400… │  │ de  │
+│  │ Automatio                   │               │ León     │ (Mensu  │  │ ju… │
+│  │ Encargado de Mantenimiento  │ EXPORTADORA   │ Veracru… │ -       │  │ 19  │
+│  │ e Infraestructura           │ DE CAFE       │ Veracruz │         │  │ de  │
+│  │                             │ CALIFORNIA    │          │         │  │ ju… │
+│  │ IT - Infrastructure Systems │ Golden 1      │ Remote   │ -       │  │ 18d │
+│  │ - DevOps Engineer II (Remot │ Credit Union  │          │         │  │     │
+│  │ Senior Sales Engineer -     │ Perforce      │ Anywhere │ -       │  │ 18d │
+│  │ Delphix                     │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps Engineer REF1752R    │ Deutsche      │ Remote   │ -       │  │ 18d │
+│  │ (m/f/d)                     │ Telekom IT    │          │         │  │     │
+│  │                             │ Solutions     │          │         │  │     │
+│  │ Senior InfoSec Engineer     │ Charles River │ Remote   │ -       │  │ 18d │
+│  │ (SecDevOps) - (REMOTE)      │               │          │         │  │     │
+│  │ Working Student (m/f/d)     │ Bruker        │ Remote   │ -       │  │ 18d │
+│  │ DevOps – Software           │ Corporation   │          │         │  │     │
+│  │ Development                 │               │          │         │  │     │
+│  │ Backend Engineer            │ Adecco        │ Benito   │ $       │  │ 16  │
+│  │                             │               │ Juárez,  │ 64,000… │  │ de  │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ ju… │
+│  │                             │               │ de       │         │  │     │
+│  │ DevOps Engineer             │ Aura          │ Anywhere │ -       │  │ 15d │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Sales Engineer (Remote, US  │ Liquibase     │ Anywhere │ -       │  │ 15d │
+│  │ Based)                      │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ 581321 DevOps Engineer      │ Philips       │ Remote   │ -       │  │ 15d │
+│  │ Testing (all genders)       │ Deutschland   │          │         │  │     │
+│  │ DevOps Engineer Mobile      │ Air Apps      │ Remote   │ -       │  │ 15d │
+│  │ DevOps Engineer             │ AssureSoft    │ Anywhere │ -       │  │ 15d │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Senior Software Engineer -  │ Close         │ Anywhere │ -       │  │ 15d │
+│  │ Backend/Python - USA Only   │               │ in the   │         │  │     │
+│  │ (1                          │               │ World    │         │  │     │
+│  │ Senior Software Engineer II │ Nomad         │ Remote   │ -       │  │ 15d │
+│  │ Senior SQL Database         │ NPS Prism     │ Anywhere │ -       │  │ 14d │
+│  │ Administrator DBA (Brazil,  │               │ in the   │         │  │     │
+│  │ Remote)                     │               │ World    │         │  │     │
+│  │ CRM Manager / GTM Systems   │ TKD Solutions │ Remote   │ -       │  │ 14d │
+│  │ Manager (m/w/d)             │               │          │         │  │     │
+│  │ Administrador de Sistemas   │ ManpowerGroup │ Miguel   │ Presen… │  │ 12  │
+│  │ Linux                       │               │ Hidalgo, │ y remot │  │ de  │
+│  │                             │               │ Ciudad   │         │  │ ju… │
+│  │                             │               │ de       │         │  │     │
+│  │ Administrador de Sistemas   │ ManpowerGroup │ Miguel   │ Presen… │  │ 11  │
+│  │ Linux                       │               │ Hidalgo, │ y remot │  │ de  │
+│  │                             │               │ Ciudad   │         │  │ ju… │
+│  │                             │               │ de       │         │  │     │
+└──┴─────────────────────────────┴───────────────┴──────────┴─────────┴──┴─────┘
+
+🌐 Reporte HTML generado: public/jobs.html
+⏱ Última corrida registrada
+
+🔍 Buscando en REMOTEOK...
+  Buscando 'Linux administrator'...  'Linux administrator' → 1 encontrados, 0 nuevos
+  Buscando 'SysAdmin'...  'SysAdmin' → 0 encontrados, 0 nuevos
+  Buscando 'System Administrator'...  'System Administrator' → 1 encontrados, 0 nuevos
+  Buscando 'Infrastructure Engineer'...  'Infrastructure Engineer' → 30 encontrados, 0 nuevos
+  Buscando 'DevOps'...  'DevOps' → 0 encontrados, 0 nuevos
+  Buscando 'PostgreSQL DBA'...  'PostgreSQL DBA' → 0 encontrados, 0 nuevos
+  Buscando 'Administrador de sistemas'...  'Administrador de sistemas' → 0 encontrados, 0 nuevos
+  Buscando 'Bash scripting Linux'...  'Bash scripting Linux' → 0 encontrados, 0 nuevos
+  Buscando 'Azure administration'...  'Azure administration' → 1 encontrados, 0 nuevos
+  Buscando 'Coordinador de infraestructura'...  'Coordinador de infraestructura' → 0 encontrados, 0 nuevos
+
+🔍 Buscando en WEWORKREMOTELY...
+  Buscando 'Linux administrator'...  'Linux administrator' → 2 encontrados, 0 nuevos
+  Buscando 'SysAdmin'...  'SysAdmin' → 0 encontrados, 0 nuevos
+  Buscando 'System Administrator'...  'System Administrator' → 8 encontrados, 0 nuevos
+  Buscando 'Infrastructure Engineer'...  'Infrastructure Engineer' → 30 encontrados, 0 nuevos
+  Buscando 'DevOps'...  'DevOps' → 22 encontrados, 0 nuevos
+  Buscando 'PostgreSQL DBA'...  'PostgreSQL DBA' → 1 encontrados, 0 nuevos
+  Buscando 'Administrador de sistemas'...  'Administrador de sistemas' → 0 encontrados, 0 nuevos
+  Buscando 'Bash scripting Linux'...  'Bash scripting Linux' → 1 encontrados, 0 nuevos
+  Buscando 'Azure administration'...  'Azure administration' → 0 encontrados, 0 nuevos
+  Buscando 'Coordinador de infraestructura'...  'Coordinador de infraestructura' → 0 encontrados, 0 nuevos
+
+🔍 Buscando en COMPUTRABAJO...
+  Buscando 'Linux administrator'...  'Linux administrator' → 20 encontrados, 2 nuevos
+  Buscando 'SysAdmin'...  'SysAdmin' → 6 encontrados, 0 nuevos
+  Buscando 'System Administrator'...  'System Administrator' → 20 encontrados, 0 nuevos
+  Buscando 'Infrastructure Engineer'...  'Infrastructure Engineer' → 14 encontrados, 0 nuevos
+  Buscando 'DevOps'...  'DevOps' → 20 encontrados, 2 nuevos
+  Buscando 'PostgreSQL DBA'...  'PostgreSQL DBA' → 1 encontrados, 0 nuevos
+  Buscando 'Administrador de sistemas'...  'Administrador de sistemas' → 20 encontrados, 2 nuevos
+  Buscando 'Bash scripting Linux'...  'Bash scripting Linux' → 10 encontrados, 0 nuevos
+  Buscando 'Azure administration'...  'Azure administration' → 3 encontrados, 0 nuevos
+  Buscando 'Coordinador de infraestructura'...  'Coordinador de infraestructura' → 20 encontrados, 0 nuevos
+
+🔍 Buscando en TRABAJOORG...
+  Buscando 'Linux administrator'...  'Linux administrator' → 20 encontrados, 0 nuevos
+  Buscando 'SysAdmin'...  'SysAdmin' → 20 encontrados, 0 nuevos
+  Buscando 'System Administrator'...  'System Administrator' → 20 encontrados, 0 nuevos
+  Buscando 'Infrastructure Engineer'...  'Infrastructure Engineer' → 20 encontrados, 0 nuevos
+  Buscando 'DevOps'...  'DevOps' → 20 encontrados, 0 nuevos
+  Buscando 'PostgreSQL DBA'...  'PostgreSQL DBA' → 20 encontrados, 20 nuevos
+  Buscando 'Administrador de sistemas'...  'Administrador de sistemas' → 20 encontrados, 0 nuevos
+  Buscando 'Bash scripting Linux'...  'Bash scripting Linux' → 20 encontrados, 0 nuevos
+  Buscando 'Azure administration'...  'Azure administration' → 20 encontrados, 0 nuevos
+  Buscando 'Coordinador de infraestructura'...  'Coordinador de infraestructura' → 20 encontrados, 0 nuevos
+
+📊 Total en DB: 232 ofertas | Esta sesión: 26 nuevas (mostrando 214 únicas)
+
+✓ 214 ofertas nuevas encontradas
+
+┏━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━┳━━┳━━━━━┓
+┃  ┃ Título                      ┃ Empresa       ┃ Ubicaci… ┃ Sueldo  ┃  ┃ Fe… ┃
+┡━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━╇━━╇━━━━━┩
+│  │ SysAdmin Linux / Soporte de │ ManpowerGroup │ Benito   │ $       │  │ Más │
+│  │ Aplicaciones                │               │ Juárez,  │ 55,000… │  │ de  │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ 30  │
+│  │                             │               │ de       │         │  │ dí  │
+│  │ SysAdmin Linux / Soporte de │ ManpowerGroup │ Benito   │ $       │  │ Más │
+│  │ Aplicaciones                │               │ Juárez,  │ 55,000… │  │ de  │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ 30  │
+│  │                             │               │ de       │         │  │ dí  │
+│  │ Administrador/a de sistemas │ talento en    │ Puebla,  │ $       │  │ Más │
+│  │                             │ accion        │ Puebla   │ 12,000… │  │ de  │
+│  │                             │               │          │ (Mensu  │  │ 30  │
+│  │                             │               │          │         │  │ dí  │
+│  │ Software Engineer           │ ManpowerGroup │ Miguel   │ Remoto  │  │ Más │
+│  │                             │               │ Hidalgo, │         │  │ de  │
+│  │                             │               │ Ciudad   │         │  │ 30  │
+│  │                             │               │ de       │         │  │ dí  │
+│  │ Ingeniero de Fibra Óptica   │ Yupana        │ Hermosi… │ -       │  │ Más │
+│  │                             │ Mexico, S de  │ Sonora   │         │  │ de  │
+│  │                             │ R.L de C.V    │          │         │  │ 30  │
+│  │                             │               │          │         │  │ dí  │
+│  │ Administrador de control de │ IROX IT       │ León,    │ $       │  │ Más │
+│  │ versiones TI                │               │ Guanaju… │ 22,000… │  │ de  │
+│  │                             │               │          │ (Mensu  │  │ 30  │
+│  │                             │               │          │         │  │ dí  │
+│  │ Recepcionista               │ Hospital      │ Naucalp… │ -       │  │ Más │
+│  │                             │ Azura         │ de       │         │  │ de  │
+│  │                             │               │ Juárez,  │         │  │ 30  │
+│  │                             │               │ Esta     │         │  │ dí  │
+│  │ Cajero administrativo       │ Hospital      │ Naucalp… │ -       │  │ Más │
+│  │                             │ Azura         │ de       │         │  │ de  │
+│  │                             │               │ Juárez,  │         │  │ 30  │
+│  │                             │               │ Esta     │         │  │ dí  │
+│  │ Coordinador Tesorería       │ DNA           │ Álvaro   │ -       │  │ Más │
+│  │                             │ INTERNATIONAL │ Obregón, │         │  │ de  │
+│  │                             │               │ Ciudad   │         │  │ 30  │
+│  │                             │               │ de       │         │  │ dí  │
+│  │ Montacarguista (Miguel      │ Link-Worldwi… │ Parral,  │ -       │  │ Ha… │
+│  │ Hidalgo)                    │               │ Chihuah… │         │  │ 2   │
+│  │                             │               │ México   │         │  │ ho… │
+│  │ Conduce con la app:         │ Link-Worldwi… │ Sahuara… │ -       │  │ Ha… │
+│  │ ingresos rápidos y horario  │               │ Sonora,  │         │  │ 2   │
+│  │ a tu med                    │               │ México   │         │  │ ho… │
+│  │ Strategic Cost Accounting   │ Link-Worldwi… │ State of │ -       │  │ Ha… │
+│  │ Leader for Plant            │               │ Mexico,  │         │  │ 2   │
+│  │ Profitabilit                │               │ State of │         │  │ ho… │
+│  │ National Sales Director:    │ Link-Worldwi… │ Valle de │ -       │  │ Ha… │
+│  │ Channel Growth              │               │ Chalco,  │         │  │ 2   │
+│  │                             │               │ State of │         │  │ ho… │
+│  │ Ingeniero Metalúrgico En    │ Link-Worldwi… │ Ecatepec │ -       │  │ Ha… │
+│  │ Compras                     │               │ de       │         │  │ 2   │
+│  │                             │               │ Morelos, │         │  │ ho… │
+│  │                             │               │ Esta     │         │  │     │
+│  │ Analista de Costos y        │ Link-Worldwi… │ Ciénega, │ -       │  │ Ha… │
+│  │ Presupuestos para Obras     │               │ Jalisco, │         │  │ 2   │
+│  │                             │               │ México   │         │  │ ho… │
+│  │ Asistente Administrativo de │ Link-Worldwi… │ Mexico   │ -       │  │ Ha… │
+│  │ Rayos X — Mañanas, Presenci │               │ City,    │         │  │ 2   │
+│  │                             │               │ Mexico   │         │  │ ho… │
+│  │                             │               │ City     │         │  │     │
+│  │ Almacenista Retail con      │ Link-Worldwi… │ Monterr… │ -       │  │ Ha… │
+│  │ Comisiones y Beneficios     │               │ Nuevo    │         │  │ 2   │
+│  │                             │               │ Leon, Mé │         │  │ ho… │
+│  │ Asistente Administrativo de │ Link-Worldwi… │ Guerrer… │ -       │  │ Ha… │
+│  │ RR. HH. – Crecimiento y Ben │               │ Coahuil… │         │  │ 2   │
+│  │                             │               │ Méxic    │         │  │ ho… │
+│  │ Reclutador Masivo, Sueldo   │ Link-Worldwi… │ Santiago │ -       │  │ Ha… │
+│  │ Base Bonos Contrato         │               │ de       │         │  │ 2   │
+│  │ inmediato                   │               │ Queréta… │         │  │ ho… │
+│  │                             │               │ Qu       │         │  │     │
+│  │ Payments Operations Lead    │ Cervin        │ Mexico   │ -       │  │ Ha… │
+│  │                             │               │ City,    │         │  │ 2   │
+│  │                             │               │ Mexico   │         │  │ ho… │
+│  │                             │               │ City     │         │  │     │
+│  │ Recepcionista Bilingüe      │ Link-Worldwi… │ Valle de │ -       │  │ Ha… │
+│  │                             │               │ Chalco,  │         │  │ 2   │
+│  │                             │               │ State of │         │  │ ho… │
+│  │ Maniobrista Montacarguista  │ Link-Worldwi… │ Coacalco │ -       │  │ Ha… │
+│  │                             │               │ de       │         │  │ 2   │
+│  │                             │               │ Berrioz… │         │  │ ho… │
+│  │ Auxiliar de Producción      │ Link-Worldwi… │ State of │ -       │  │ Ha… │
+│  │ Impresión — Turnos 12h,     │               │ Mexico,  │         │  │ 2   │
+│  │ Prestaci                    │               │ State of │         │  │ ho… │
+│  │ Global Data Engineer —      │ NielsenIQ     │ State of │ -       │  │ Ha… │
+│  │ Scalable Pipelines          │               │ Mexico,  │         │  │ 2   │
+│  │                             │               │ State of │         │  │ ho… │
+│  │ Accounts Payable Specialist │ Link-Worldwi… │ Guerrer… │ -       │  │ Ha… │
+│  │ — Timely Vendor Payments    │               │ Guerrer… │         │  │ 2   │
+│  │                             │               │ Méxic    │         │  │ ho… │
+│  │ Cocinero/a - Turnos Mañana  │ Link-Worldwi… │ Guerrer… │ -       │  │ Ha… │
+│  │ o Tarde | Propinas          │               │ Guerrer… │         │  │ 2   │
+│  │                             │               │ Méxic    │         │  │ ho… │
+│  │ Líder de Finanzas y         │ La Madeleine  │ Naucalp… │ -       │  │ Ha… │
+│  │ Contabilidad | Optimiza     │ Products      │ de       │         │  │ 2   │
+│  │ Flujo de Ca                 │               │ Juárez,  │         │  │ ho… │
+│  │                             │               │ Stat     │         │  │     │
+│  │ Gana Chats Asesor Cobranza  │ Link-Worldwi… │ Zitlala, │ -       │  │ Ha… │
+│  │                             │               │ Guerrer… │         │  │ 2   │
+│  │                             │               │ México   │         │  │ ho… │
+│  │ Analyst Senior Analyst      │ PSC           │ Heroica  │ -       │  │ Ha… │
+│  │ Senior                      │ Industries    │ Veracru… │         │  │ 2   │
+│  │                             │               │ Veracru  │         │  │ ho… │
+│  │ Asesor de Cobranza          │ Link-Worldwi… │ Mexico   │ -       │  │ Ha… │
+│  │ Telefónica                  │               │ City,    │         │  │ 2   │
+│  │                             │               │ Mexico   │         │  │ ho… │
+│  │                             │               │ City     │         │  │     │
+│  │ Mulesoft Certified          │ Link-Worldwi… │ Venusti… │ -       │  │ Ha… │
+│  │ Connector Developer         │               │ Carranz… │         │  │ 2   │
+│  │                             │               │ Vera     │         │  │ ho… │
+│  │ Senior Sales Executive      │ Rh Shipping   │ Monterr… │ -       │  │ Ha… │
+│  │                             │               │ Nuevo    │         │  │ 2   │
+│  │                             │               │ Leon, Mé │         │  │ ho… │
+│  │ Residuals Payments          │ Link-Worldwi… │ Valle de │ -       │  │ Ha… │
+│  │                             │               │ Chalco,  │         │  │ 2   │
+│  │                             │               │ State of │         │  │ ho… │
+│  │ Water Injection Sme         │ Link-Worldwi… │ Valle de │ -       │  │ Ha… │
+│  │                             │               │ Chalco,  │         │  │ 2   │
+│  │                             │               │ State of │         │  │ ho… │
+│  │ Control de Combustibles     │ Link-Worldwi… │ San      │ -       │  │ Ha… │
+│  │ Diésel — Técnico Proactivo  │               │ Salvador │         │  │ 2   │
+│  │                             │               │ Atenco,  │         │  │ ho… │
+│  │                             │               │ Stat     │         │  │     │
+│  │ Global SAP Basis Admin      │ Link-Worldwi… │ Baja     │ -       │  │ Ha… │
+│  │                             │               │ Califor… │         │  │ 2   │
+│  │                             │               │ Baja Cal │         │  │ ho… │
+│  │ Strategic Recruitment       │ Link-Worldwi… │ Mexico   │ -       │  │ Ha… │
+│  │ Partner, Talent Acquisition │               │ City,    │         │  │ 2   │
+│  │                             │               │ Mexico   │         │  │ ho… │
+│  │                             │               │ City     │         │  │     │
+│  │ Líder del Sistema de        │ Link-Worldwi… │ Tulanci… │ -       │  │ Ha… │
+│  │ Gestión de Calidad e        │               │ Hidalgo, │         │  │ 2   │
+│  │ Auditorías                  │               │ Méxi     │         │  │ ho… │
+│  │ Ejecutivo General           │ Link-Worldwi… │ Tijuana, │ -       │  │ Ha… │
+│  │                             │               │ Baja     │         │  │ 2   │
+│  │                             │               │ Califor… │         │  │ ho… │
+│  │ Líder de Auditoría de       │ Link-Worldwi… │ , México │ -       │  │ Ha… │
+│  │ Sucursales | Mejora         │               │          │         │  │ 2   │
+│  │ Operativa                   │               │          │         │  │ ho… │
+│  │ Talent Acquisition Lead     │ Link-Worldwi… │ Hermosi… │ -       │  │ Ha… │
+│  │                             │               │ Sonora,  │         │  │ 2   │
+│  │                             │               │ Méxic    │         │  │ ho… │
+│  │ Services Program Planner    │ Link-Worldwi… │ Guerrer… │ -       │  │ Ha… │
+│  │                             │               │ Guerrer… │         │  │ 2   │
+│  │                             │               │ Méxic    │         │  │ ho… │
+│  │ Ayudante de Cocina — Inicio │ Link-Worldwi… │ Venusti… │ -       │  │ Ha… │
+│  │ Rápido y Capacitación       │               │ Carranz… │         │  │ 2   │
+│  │                             │               │ Vera     │         │  │ ho… │
+│  │ Gerente de Proyectos TI —   │ Link-Worldwi… │ Chihuah… │ -       │  │ Ha… │
+│  │ Dashboards y Stakeholders   │               │ Chihuah… │         │  │ 2   │
+│  │                             │               │ Méx      │         │  │ ho… │
+│  │ Líder de Promotores –       │ Link-Worldwi… │ Mexico   │ -       │  │ Ha… │
+│  │ Tiendas de Autoservicio     │               │ City,    │         │  │ 2   │
+│  │                             │               │ Mexico   │         │  │ ho… │
+│  │                             │               │ City     │         │  │     │
+│  │ Administrative Officer      │ US Animal and │ Mexico   │ -       │  │ Ha… │
+│  │                             │ Plant Health  │ City,    │         │  │ 2   │
+│  │                             │ Ins           │ Mexico   │         │  │ ho… │
+│  │                             │               │ City     │         │  │     │
+│  │ Data Science Expert         │ Link-Worldwi… │ Chihuah… │ -       │  │ Ha… │
+│  │                             │               │ Chihuah… │         │  │ 2   │
+│  │                             │               │ Méx      │         │  │ ho… │
+│  │ Coordinador de Tráfico y    │ Link-Worldwi… │ Mexico   │ -       │  │ Ha… │
+│  │ Logística                   │               │ City,    │         │  │ 2   │
+│  │                             │               │ Mexico   │         │  │ ho… │
+│  │                             │               │ City     │         │  │     │
+│  │ Recepcionista Nocturno —    │ asociacionde… │ Chihuah… │ -       │  │ Ha… │
+│  │ Front Office y Reservas     │               │ Chihuah… │         │  │ 2   │
+│  │                             │               │ Méx      │         │  │ ho… │
+│  │ Engineering Manager         │ -             │ Hermosi… │ -       │  │ Ha… │
+│  │                             │               │ Sonora   │         │  │ 9   │
+│  │                             │               │          │         │  │ hor │
+│  │ Líder de Proyecto PMO       │ Grupo ONO     │ Álvaro   │ $       │  │ Ha… │
+│  │                             │               │ Obregón, │ 35,000… │  │ 9   │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ hor │
+│  │                             │               │ de       │         │  │     │
+│  │ Desarrollador Backend .NET  │ TECMOIN       │ Tlalpan, │ -       │  │ Ha… │
+│  │ Senior (C#                  │               │ Ciudad   │         │  │ 9   │
+│  │                             │               │ de       │         │  │ hor │
+│  │                             │               │ México   │         │  │     │
+│  │ Coordinador de Proyectos    │ Terminal      │ Colón,   │ $       │  │ Ha… │
+│  │                             │ Logistics     │ Queréta… │ 28,000… │  │ 9   │
+│  │                             │               │          │ (Mensu  │  │ hor │
+│  │ Jira System Administrator   │ NOV SHARED    │ Monterr… │ Presen… │  │ Ha… │
+│  │                             │ SERVICES      │ Nuevo    │ y remot │  │ 8   │
+│  │                             │ MEXICO        │ León     │         │  │ hor │
+│  │ Consultor(a) de Sistemas    │ ALPHA DEVOPS  │ Pachuca  │ -       │  │ Ha… │
+│  │ Aspel                       │ COMPANY       │ de Soto, │         │  │ 8   │
+│  │                             │               │ Hidalgo  │         │  │ hor │
+│  │ Dibujante Con experiencia   │ -             │ Tlalnep… │ $       │  │ Ha… │
+│  │                             │               │ de Baz,  │ 13,000… │  │ 8   │
+│  │                             │               │ Esta     │ (Mensu  │  │ hor │
+│  │ Coordinador de              │ SOLUCIONES EN │ Zapopan, │ -       │  │ Ha… │
+│  │ Ciberseguridad e            │ TECNOLOGIA Y  │ Jalisco  │         │  │ 8   │
+│  │ Infraestructura             │ DES           │          │         │  │ hor │
+│  │ Administrador Linux         │ Universidad   │ Naucalp… │ $       │  │ Ha… │
+│  │                             │ Tecnológica   │ de       │ 36,000… │  │ 7   │
+│  │                             │ Latino        │ Juárez,  │ (Mensu  │  │ hor │
+│  │                             │               │ Esta     │         │  │     │
+│  │ Ejecutivo de ventas         │ SIASA         │ Mérida,  │ -       │  │ Ha… │
+│  │                             │               │ Yucatán  │         │  │ 7   │
+│  │                             │               │          │         │  │ hor │
+│  │ Coordinador de              │ PI Soluciones │ Cuautit… │ $       │  │ Ha… │
+│  │ infraestructura             │ Administrati… │ Estado   │ 25,000… │  │ 7   │
+│  │                             │               │ de Méx   │ (Mensu  │  │ hor │
+│  │ Coordinador legal y         │ Terminal      │ Colón,   │ $       │  │ Ha… │
+│  │ gestoria                    │ Logistics     │ Queréta… │ 18,000… │  │ 7   │
+│  │                             │               │          │ (Mensu  │  │ hor │
+│  │ Senior Network and Segurity │ Medina        │ El       │ -       │  │ Ha… │
+│  │ Engineer                    │ Consultores   │ Marqués, │         │  │ 7   │
+│  │                             │               │ Queréta… │         │  │ día │
+│  │ Ingeniero de Compras /      │ FOXCONN GDL   │ San      │ -       │  │ Ha… │
+│  │ Procurement Specialist      │               │ Pedro    │         │  │ 7   │
+│  │                             │               │ Tlaquep… │         │  │ día │
+│  │                             │               │ Ja       │         │  │     │
+│  │ Desarrollador               │ High Power de │ Tlajomu… │ $       │  │ Ha… │
+│  │                             │ Mexico        │ de       │ 20,000… │  │ 7   │
+│  │                             │               │ Zúñiga,  │ (Mensu  │  │ día │
+│  │                             │               │ Jal      │         │  │     │
+│  │ Desarrollador Sr            │ -             │ Miguel   │ $       │  │ Ha… │
+│  │                             │               │ Hidalgo, │ 50,000… │  │ 6   │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ hor │
+│  │                             │               │ de       │         │  │     │
+│  │ Coordinador de              │ -             │ Mérida,  │ $       │  │ Ha… │
+│  │ Infraestructura y Soporte   │               │ Yucatán  │ 15,000… │  │ 6   │
+│  │ Técnico                     │               │          │ (Mensu  │  │ hor │
+│  │ Administrador de Sistemas   │ Ituran        │ Cuauhté… │ Presen… │  │ Ha… │
+│  │ Regional Senior             │               │ Ciudad   │ y remot │  │ 6   │
+│  │                             │               │ de Méx   │         │  │ día │
+│  │ Especialista en Odoo ERP /  │ Human Staff   │ Torreón, │ -       │  │ Ha… │
+│  │ Administrador de Sistemas   │               │ Coahuila │         │  │ 6   │
+│  │ ER                          │               │          │         │  │ día │
+│  │ Site Reliability Engineer   │ NOV SHARED    │ Monterr… │ Presen… │  │ Ha… │
+│  │                             │ SERVICES      │ Nuevo    │ y remot │  │ 5   │
+│  │                             │ MEXICO        │ León     │         │  │ hor │
+│  │ Ingeniero de Procesos C     │ MITSUI & CO.  │ San      │ -       │  │ Ha… │
+│  │                             │ INFRASTRUCTU… │ Pedro    │         │  │ 5   │
+│  │                             │ SO            │ Garza    │         │  │ hor │
+│  │                             │               │ García,  │         │  │     │
+│  │                             │               │ N        │         │  │     │
+│  │ Administrador/a de sistemas │ Soriana       │ San      │ $       │  │ Ha… │
+│  │                             │               │ Pedro    │ 16,449… │  │ 5   │
+│  │                             │               │ Tlaquep… │ (Mensu  │  │ día │
+│  │                             │               │ Ja       │         │  │     │
+│  │ Data Architect              │ Lumina        │ Monterr… │ Presen… │  │ Ha… │
+│  │                             │ Software      │ Nuevo    │ y remot │  │ 5   │
+│  │                             │               │ León     │         │  │ día │
+│  │ BI Developer Senior (MS     │ Lumina        │ Monterr… │ Presen… │  │ Ha… │
+│  │ Fabric)                     │ Software      │ Nuevo    │ y remot │  │ 5   │
+│  │                             │               │ León     │         │  │ día │
+│  │ Supervisor de Obra civil    │ Grupo         │ Benito   │ -       │  │ Ha… │
+│  │                             │ Diagnóstico   │ Juárez,  │         │  │ 5   │
+│  │                             │ Aries         │ Ciudad   │         │  │ día │
+│  │                             │               │ de       │         │  │     │
+│  │ Técnico de mantenimiento    │ Pay Force     │ Monterr… │ $       │  │ Ha… │
+│  │ electromecánico             │               │ Nuevo    │ 18,000… │  │ 45  │
+│  │                             │               │ León     │ (Mensu  │  │ mi  │
+│  │ Líder Técnico / Project     │ Caja Popular  │ León,    │ $       │  │ Ha… │
+│  │ Manager TI (.NET)           │ Mexicana      │ Guanaju… │ 44,022… │  │ 4   │
+│  │                             │               │          │ (Mensu  │  │ hor │
+│  │ Software Engineer Manager   │ -             │ Puebla,  │ $       │  │ Ha… │
+│  │                             │               │ Puebla   │ 72,000… │  │ 4   │
+│  │                             │               │          │ (Mensu  │  │ hor │
+│  │ Ventas B2B GPS o Software   │ Operadora de  │ Naucalp… │ $       │  │ Ha… │
+│  │                             │ Rastreos UDA  │ de       │ 25,000… │  │ 4   │
+│  │                             │ S.A           │ Juárez,  │ (Mensu  │  │ hor │
+│  │                             │               │ Esta     │         │  │     │
+│  │ Supervisor de Sistema       │ Universidad   │ León,    │ $       │  │ Ha… │
+│  │ Escolar                     │ Insurgentes   │ Guanaju… │ 12,700… │  │ 4   │
+│  │                             │               │          │ (Mensu  │  │ hor │
+│  │ Sysadmin Linux              │ -             │ Queréta… │ -       │  │ Ha… │
+│  │                             │               │ Queréta… │         │  │ 4   │
+│  │                             │               │          │         │  │ día │
+│  │ Administrador de Servidores │ MTI           │ Queréta… │ -       │  │ Ha… │
+│  │ Linux                       │ Consultoria   │ Queréta… │         │  │ 4   │
+│  │                             │               │          │         │  │ día │
+│  │ SysAdmin AWS                │ Blackcore ®   │ León,    │ -       │  │ Ha… │
+│  │                             │               │ Guanaju… │         │  │ 4   │
+│  │                             │               │          │         │  │ día │
+│  │ Administrador de Sistemas   │ -             │ Tuxtla   │ $       │  │ Ha… │
+│  │                             │               │ Gutiérr… │ 9,000.… │  │ 4   │
+│  │                             │               │ Chiapas  │ (Mensua │  │ día │
+│  │ Analista sistemas           │ Grupo         │ Tlalpan, │ $       │  │ Ha… │
+│  │ administrador de            │ Financiero    │ Ciudad   │ 16,000… │  │ 4   │
+│  │ aplicaciones                │ Inbursa Corpo │ de       │ (Mensu  │  │ día │
+│  │                             │               │ México   │         │  │     │
+│  │ Operations Administrator    │ Moore Orozco  │ Chihuah… │ $       │  │ Ha… │
+│  │                             │ Medina S.C.   │ Chihuah… │ 28,000… │  │ 4   │
+│  │                             │               │          │ (Mensu  │  │ día │
+│  │ Cybersecurity Analyst       │ VITON SAS DE  │ Álvaro   │ $       │  │ Ha… │
+│  │                             │ CV            │ Obregón, │ 35,000… │  │ 4   │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ día │
+│  │                             │               │ de       │         │  │     │
+│  │ Coordinador de              │ -             │ Boca del │ $       │  │ Ha… │
+│  │ Mantenimiento e             │               │ Río,     │ 33,000… │  │ 4   │
+│  │ Infraestructura             │               │ Veracruz │ (Mensu  │  │ día │
+│  │ Gerente de Área de IT       │ -             │ Boca del │ $       │  │ Ha… │
+│  │                             │               │ Río,     │ 20,000… │  │ 36  │
+│  │                             │               │ Veracruz │ (Mensu  │  │ mi  │
+│  │ Responsable de reparacion y │ -             │ Tijuana, │ $       │  │ Ha… │
+│  │ mantenimiento               │               │ Baja     │ 13,000… │  │ 3   │
+│  │                             │               │ Califor… │ (Mensu  │  │ hor │
+│  │ Lider de reclutamiento IT   │ -             │ Miguel   │ $       │  │ Ha… │
+│  │                             │               │ Hidalgo, │ 40,000… │  │ 3   │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ hor │
+│  │                             │               │ de       │         │  │     │
+│  │ Analista de Soporte         │ Involve RH    │ Miguel   │ $       │  │ Ha… │
+│  │                             │               │ Hidalgo, │ 28,000… │  │ 3   │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ hor │
+│  │                             │               │ de       │         │  │     │
+│  │ Coordinador/a               │ Terminal      │ Queréta… │ $       │  │ Ha… │
+│  │ administrativo y gestoría   │ Logistics     │ Queréta… │ 19,000… │  │ 3   │
+│  │                             │               │          │ (Mensu  │  │ hor │
+│  │ Sap Basis Senior            │ TEVA RH       │ Cuauhté… │ Remoto  │  │ Ha… │
+│  │                             │               │ Ciudad   │         │  │ 3   │
+│  │                             │               │ de Méx   │         │  │ día │
+│  │ SysAdmin Windows            │ KODE IT       │ Tlalpan, │ $       │  │ Ha… │
+│  │                             │               │ Ciudad   │ 27,000… │  │ 3   │
+│  │                             │               │ de       │ (Mensu  │  │ día │
+│  │                             │               │ México   │         │  │     │
+│  │ Administrador de sistema    │ MAOSA         │ Morelia, │ -       │  │ Ha… │
+│  │ Intelisis                   │               │ Michoac… │         │  │ 3   │
+│  │                             │               │          │         │  │ día │
+│  │ Administrador de Sistemas   │ GRUPO         │ Benito   │ Remoto  │  │ Ha… │
+│  │ Jr                          │ EMPRESARIAL   │ Juárez,  │         │  │ 3   │
+│  │                             │ MMB           │ Ciudad   │         │  │ día │
+│  │                             │               │ de       │         │  │     │
+│  │ Senior NetSuite Admin /     │ LATAM         │ México   │ Remoto  │  │ Ha… │
+│  │ Business Systems Analyst of │ Management    │          │         │  │ 3   │
+│  │ ERP                         │ Recruitment   │          │         │  │ día │
+│  │ Software Engineer           │ TRIMBLE       │ Mexical… │ $       │  │ Ha… │
+│  │                             │ CONSULTING    │ Baja     │ 50,000… │  │ 3   │
+│  │                             │ TECHNOLOGIE   │ Califor… │ (Mensu  │  │ día │
+│  │ AI Mobile Software Engineer │ TRIMBLE       │ Mexical… │ $       │  │ Ha… │
+│  │                             │ CONSULTING    │ Baja     │ 60,000… │  │ 3   │
+│  │                             │ TECHNOLOGIE   │ Califor… │ (Mensu  │  │ día │
+│  │ Arquitecto de Soluciones    │ Lumina        │ Monterr… │ Presen… │  │ Ha… │
+│  │                             │ Software      │ Nuevo    │ y remot │  │ 3   │
+│  │                             │               │ León     │         │  │ día │
+│  │ Ingeniero Sr de base de     │ Reto          │ Benito   │ -       │  │ Ha… │
+│  │ datos                       │ Industrial    │ Juárez,  │         │  │ 3   │
+│  │                             │ S.A. de C.V.  │ Ciudad   │         │  │ día │
+│  │                             │               │ de       │         │  │     │
+│  │ Operador Batch Control M    │ Indra         │ Miguel   │ Remoto  │  │ Ha… │
+│  │                             │ Sistemas      │ Hidalgo, │         │  │ 3   │
+│  │                             │ México        │ Ciudad   │         │  │ día │
+│  │                             │               │ de       │         │  │     │
+│  │ Administrador de            │ TECMOIN       │ Tlalpan, │ -       │  │ Ha… │
+│  │ Infraestructura TI          │               │ Ciudad   │         │  │ 3   │
+│  │                             │               │ de       │         │  │ día │
+│  │                             │               │ México   │         │  │     │
+│  │ Supervisor de Mantenimiento │ Galletas      │ Mérida,  │ $       │  │ Ha… │
+│  │ a Infraestructura           │ Dondé         │ Yucatán  │ 19,000… │  │ 3   │
+│  │                             │               │          │ (Mensu  │  │ día │
+│  │ Coordinador de mtto de      │ TV CABLE DEL  │ Durango, │ $       │  │ Ha… │
+│  │ infraestructura de red de   │ GUADIANA SA   │ Durango  │ 20,000… │  │ 3   │
+│  │ transp                      │ DE CV         │          │ (Mensu  │  │ día │
+│  │ Supervisor de redes         │ SDC NET       │ Benito   │ $       │  │ Ha… │
+│  │                             │               │ Juárez,  │ 20,000… │  │ 3   │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ día │
+│  │                             │               │ de       │         │  │     │
+│  │ Coordinador de Sistemas y   │ MENDOZA       │ Cuautit… │ $       │  │ Ha… │
+│  │ Desarrollo de Software      │ SHOOTING      │ Izcalli, │ 24,000… │  │ 22  │
+│  │                             │ SPORTS        │ Estad    │ (Mensu  │  │ ho  │
+│  │ Administrador del sistema   │ CENTRO DE     │ Cuautla… │ $       │  │ Ha… │
+│  │ de gestión ambiental        │ DISTRIBUCION  │ Puebla   │ 9,000.… │  │ 2   │
+│  │                             │ INDUSTR       │          │ (Mensua │  │ día │
+│  │ Cloud Devops Jr.            │ Smart         │ Cuauhté… │ $       │  │ Ha… │
+│  │                             │ Quallity      │ Ciudad   │ 14,000… │  │ 2   │
+│  │                             │ Software      │ de Méx   │ (Mensu  │  │ día │
+│  │ Azure DevOps                │ Tata          │ Queréta… │ Presen… │  │ Ha… │
+│  │                             │ Consultancy   │ Queréta… │ y remot │  │ 2   │
+│  │                             │ Services de M │          │         │  │ día │
+│  │ Líder de ingeniería         │ Soluciones    │ Iztapal… │ $       │  │ Ha… │
+│  │                             │ Kabec, S.A.   │ Ciudad   │ 35,000… │  │ 2   │
+│  │                             │ de C.V.       │ de Méx   │ (Mensu  │  │ día │
+│  │ Integrador / Administrador  │ Citrus        │ Miguel   │ Presen… │  │ Ha… │
+│  │ Oracle NetSuite             │ Patrimonial   │ Hidalgo, │ y remot │  │ 2   │
+│  │                             │               │ Ciudad   │         │  │ día │
+│  │                             │               │ de       │         │  │     │
+│  │ Analista de Soporte e       │ Blackcore ®   │ León,    │ -       │  │ Ha… │
+│  │ Infraestructura Jr.         │               │ Guanaju… │         │  │ 2   │
+│  │                             │               │          │         │  │ día │
+│  │ Supervisor de Urbanización  │ Grupo-Ruba    │ Mexical… │ -       │  │ Ha… │
+│  │ / Auditor Infraestructura   │               │ Baja     │         │  │ 2   │
+│  │                             │               │ Califor… │         │  │ día │
+│  │ Supervisor de               │ Palace        │ Benito   │ -       │  │ Ha… │
+│  │ Infraestructura             │ Resorts       │ Juárez,  │         │  │ 2   │
+│  │                             │               │ Quintana │         │  │ día │
+│  │                             │               │ R        │         │  │     │
+│  │ Coordinador de TI e         │ Probecarios   │ Cuauhté… │ $       │  │ Ha… │
+│  │ infraestructura, Cuauhtémoc │               │ Ciudad   │ 25,000… │  │ 2   │
+│  │                             │               │ de Méx   │ (Mensu  │  │ día │
+│  │ Coordinador de Proyectos e  │ DISTRIBUIDORA │ Salaman… │ $       │  │ Ha… │
+│  │ Infraestructura Física y    │ SUCAHERZA     │ Guanaju… │ 17,223… │  │ 2   │
+│  │ Man                         │               │          │ (Mensu  │  │ día │
+│  │ Coordinador de              │ -             │ Iztapal… │ -       │  │ Ha… │
+│  │ Infraestructura, voz y      │               │ Ciudad   │         │  │ 2   │
+│  │ datos                       │               │ de Méx   │         │  │ día │
+│  │ Contador administrador      │ GM            │ Atizapán │ $       │  │ Ha… │
+│  │                             │ CORPORATIVO   │ de       │ 20,000… │  │ 19  │
+│  │                             │ INDUSTRIAL    │ Zaragoz… │ (Mensu  │  │ ho  │
+│  │                             │               │ Est      │         │  │     │
+│  │ Desarrollador GoLang        │ Capital       │ Benito   │ $       │  │ Ha… │
+│  │                             │ Empresarial   │ Juárez,  │ 60,000… │  │ 13  │
+│  │                             │ Horizonte     │ Ciudad   │ (Mensu  │  │ ho  │
+│  │                             │               │ de       │         │  │     │
+│  │ Ingeniero Sr de Cloud Azure │ AIT           │ Benito   │ $       │  │ Ha… │
+│  │                             │ Vanguardia    │ Juárez,  │ 59,999… │  │ 10  │
+│  │                             │ Tecnológica   │ Ciudad   │ (Mensu  │  │ ho  │
+│  │                             │               │ de       │         │  │     │
+│  │ Ejecutivo  comercial        │ Radec S.A. de │ Iztapal… │ -       │  │ Ha… │
+│  │                             │ C.V.          │ Ciudad   │         │  │ 1   │
+│  │                             │               │ de Méx   │         │  │ hor │
+│  │ Becario (a) en Desarrollo   │ Probecarios   │ Tijuana, │ $       │  │ Ha… │
+│  │ de Software                 │               │ Baja     │ 10,000… │  │ 1   │
+│  │                             │               │ Califor… │ (Mensu  │  │ hor │
+│  │ Cajero administrador        │ Rock´s gym    │ El       │ -       │  │ Ha… │
+│  │                             │               │ Marqués, │         │  │ 1   │
+│  │                             │               │ Queréta… │         │  │ hor │
+│  │ Administrador del Sistema   │ Plastic       │ Iztapal… │ -       │  │ Ay… │
+│  │ de Gestión de Calidad       │ Energy        │ Ciudad   │         │  │     │
+│  │                             │ Company       │ de Méx   │         │  │     │
+│  │ SysAdmin Linux              │ IDS           │ Benito   │ -       │  │ Ay… │
+│  │                             │ Comercial,    │ Juárez,  │         │  │     │
+│  │                             │ S.A. de C.V.  │ Ciudad   │         │  │     │
+│  │                             │               │ de       │         │  │     │
+│  │ Especialista Senior de      │ Capital       │ Benito   │ $       │  │ Ay… │
+│  │ Seguridad AWS               │ Empresarial   │ Juárez,  │ 60,000… │  │     │
+│  │                             │ Horizonte     │ Ciudad   │ (Mensu  │  │     │
+│  │                             │               │ de       │         │  │     │
+│  │ Senior Software Engineer    │ LEADVENTURE   │ La Paz,  │ Remoto  │  │ Ay… │
+│  │                             │               │ Estado   │         │  │     │
+│  │                             │               │ de       │         │  │     │
+│  │                             │               │ México   │         │  │     │
+│  │ Contador administrativo     │ RCG           │ Hermosi… │ $       │  │ Ay… │
+│  │                             │ DESARROLLOS   │ Sonora   │ 16,000… │  │     │
+│  │                             │ SA DE CV      │          │ (Mensu  │  │     │
+│  │ Analista de Monitoreo y     │ ESPECIALISTAS │ Benito   │ -       │  │ Ay… │
+│  │ Soporte TI                  │ EN LA         │ Juárez,  │         │  │     │
+│  │                             │ INTEGRACIO    │ Ciudad   │         │  │     │
+│  │                             │               │ de       │         │  │     │
+│  │ Coordinador de              │ Palace        │ Benito   │ -       │  │ Ay… │
+│  │ Infraestructura             │ Resorts       │ Juárez,  │         │  │     │
+│  │                             │               │ Quintana │         │  │     │
+│  │                             │               │ R        │         │  │     │
+│  │ Supervisor Eléctrico e      │ TBC de México │ San Luis │ $       │  │ Ay… │
+│  │ infraestructura             │               │ Potosí,  │ 18,000… │  │     │
+│  │                             │               │ San Luis │ (Mensu  │  │     │
+│  │ Site Reliability Engineer   │ Bright Vision │ Remote   │ -       │  │ 9d  │
+│  │ (SRE)                       │ Technologies  │          │         │  │     │
+│  │ DevOps Engineer - Midnight  │ IO Global     │ Anywhere │ -       │  │ 9d  │
+│  │ Foundation                  │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps & Platform Engineer  │ Agilent       │ Anywhere │ -       │  │ 9d  │
+│  │ (AWS / CI/CD)               │ Technologies  │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps SRE - Senior or Lead │ Southwest     │ Remote   │ -       │  │ 9d  │
+│  │ (Remote Eligible)           │ Power Pool    │          │         │  │     │
+│  │ Analista de negocio y de    │ C&E Quality   │ Álvaro   │ Remoto  │  │ 5   │
+│  │ sistemas                    │ Consulting    │ Obregón, │         │  │ de  │
+│  │                             │               │ Ciudad   │         │  │ ju… │
+│  │                             │               │ de       │         │  │     │
+│  │ Product Manager II -        │ Kraken        │ Anywhere │ -       │  │ 3d  │
+│  │ Financial Systems           │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Senior DevOps Engineer      │ Qualifyze     │ Anywhere │ -       │  │ 3d  │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps Engineer             │ Win Home      │ Anywhere │ -       │  │ 3d  │
+│  │                             │ Inspection    │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Head of Customer Success    │ OnTheGoSyste… │ Anywhere │ -       │  │ 30d │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Full Stack AI Engineer      │ Reveleer      │ Anywhere │ -       │  │ 2d  │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ AI Research Engineer        │ Tether        │ Anywhere │ -       │  │ 2d  │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Senior Linux System         │ Anexia        │ Anywhere │ -       │  │ 29d │
+│  │ Engineer (M/W/D)            │ Internetdien… │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps Engineer - EMEA/US   │ BlueMatrix    │ Anywhere │ -       │  │ 29d │
+│  │ Shift                       │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Senior Solutions Engineer   │ Binance       │ Anywhere │ -       │  │ 29d │
+│  │ (API, Python, Node.JS)      │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Engenheiro DevOps (GitHub e │ Premiersoft   │ Anywhere │ -       │  │ 29d │
+│  │ CI/CD) | Remoto             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ UX Designer – Design System │ Lyncas        │ Anywhere │ -       │  │ 28d │
+│  │ Pleno                       │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ GxP Instrument Systems      │ AHU           │ Anywhere │ -       │  │ 25d │
+│  │ Engineer- Norwood, MA       │ Technologies  │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps Engineer (contract)  │ Covent IT     │ Anywhere │ -       │  │ 25d │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Senior Platform/Site        │ Lemon.io      │ Remote   │ -       │  │ 25d │
+│  │ Reliability Engineer        │               │          │         │  │     │
+│  │ DevOps e Platform Sênior|   │ Premiersoft   │ Anywhere │ -       │  │ 25d │
+│  │ Remoto                      │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Administrador de Sistemas   │ ManpowerGroup │ Miguel   │ Presen… │  │ 24  │
+│  │ Linux                       │               │ Hidalgo, │ y remot │  │ de  │
+│  │                             │               │ Ciudad   │         │  │ ju… │
+│  │                             │               │ de       │         │  │     │
+│  │ Staff DevOps Engineer       │ Runware       │ Anywhere │ -       │  │ 23d │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps Engineer             │ Career Team   │ Anywhere │ -       │  │ 23d │
+│  │                             │ Enterprises   │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Mid/Senior DevOps Engineer  │ Intelmatix    │ Anywhere │ -       │  │ 23d │
+│  │ (Egypt)                     │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps Virtual Development  │ HYUNDAI       │ Anywhere │ -       │  │ 23d │
+│  │ Engineer                    │ MOTORS        │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Principal DevOps Engineer – │ Revvity       │ Anywhere │ -       │  │ 22d │
+│  │ Build, Release and Cloud Au │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Staff Software Engineer     │ bunny.net     │ Anywhere │ -       │  │ 22d │
+│  │ (Magic Containers)          │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Administrador de Servidores │ ManpowerGroup │ Miguel   │ $       │  │ 22  │
+│  │                             │               │ Hidalgo, │ 32,000… │  │ de  │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ ju… │
+│  │                             │               │ de       │         │  │     │
+│  │ Software engineer           │ Sticker Mule  │ Anywhere │ -       │  │ 20d │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Business Development        │ Fresha        │ Lisboa,  │ -       │  │ 20… │
+│  │ Executive                   │               │ Lisboa,  │         │  │     │
+│  │                             │               │ Lisboa,  │         │  │     │
+│  │                             │               │ P        │         │  │     │
+│  │ Facility Maintenance        │ PriceSmart    │ Montego  │ -       │  │ 20… │
+│  │ Technician                  │               │ Bay,     │         │  │     │
+│  │ Senior AI Engineer          │ Lemon.io      │ Remote   │ $80000  │  │ 20… │
+│  │ Architect                   │               │          │ -       │  │     │
+│  │                             │               │          │ $190000 │  │     │
+│  │ Engineer 2                  │ Catalyst      │ Bengalu… │ -       │  │ 20… │
+│  │                             │ Brands India  │          │         │  │     │
+│  │ Junior UI Engineer          │ Arabian       │ Birming… │ -       │  │ 20… │
+│  │                             │ Private       │ Birming… │         │  │     │
+│  │                             │ Holdings      │ E        │         │  │     │
+│  │ Creative                    │ The Elites    │ London,  │ -       │  │ 20… │
+│  │ Orientador a Laboral        │ Ironhack      │ Madrid,  │ -       │  │ 20… │
+│  │ Freelance Remoto            │               │ Madrid,  │         │  │     │
+│  │                             │               │ Comunid… │         │  │     │
+│  │ Executive Assistant         │ EfficientAide │ Califor… │ -       │  │ 20… │
+│  │                             │               │ Califor… │         │  │     │
+│  │                             │               │ U        │         │  │     │
+│  │ Data Scientist              │ New Flyer     │ Winnipe… │ -       │  │ 20… │
+│  │                             │               │ Winnipe… │         │  │     │
+│  │                             │               │ Manit    │         │  │     │
+│  │ Resource mobiliser          │ Vrindavan     │ Mathura, │ -       │  │ 20… │
+│  │                             │ Chandrodaya   │          │         │  │     │
+│  │                             │ Mandir        │          │         │  │     │
+│  │ India posts require 17      │ The Kashmir   │ Behat,   │ -       │  │ 20… │
+│  │ Staff Car Drivers Fast      │ Monitor       │          │         │  │     │
+│  │ track you                   │               │          │         │  │     │
+│  │ Junior Product Designer     │ WealthCounse… │ Jersey   │ -       │  │ 20… │
+│  │                             │ LLC           │ City,    │         │  │     │
+│  │                             │               │ Jersey   │         │  │     │
+│  │                             │               │ City,    │         │  │     │
+│  │ Profesor a de Apoyo escolar │ Apprentus     │ Sevilla, │ -       │  │ 20… │
+│  │ Todos los niveles           │               │          │         │  │     │
+│  │ Accommodation Administrator │ Sodexo        │ Queensl… │ -       │  │ 20… │
+│  │ FIFO 14 7 Roster Cairns Que │               │ Queensl… │         │  │     │
+│  │                             │               │ A        │         │  │     │
+│  │ SVP Banking Operations      │ Nymbus        │ Jackson… │ -       │  │ 20… │
+│  │                             │               │ Jackson… │         │  │     │
+│  │ Mortgage Operations Loan    │ Wealthfront   │ New      │ -       │  │ 20… │
+│  │ Processor                   │               │ York,    │         │  │     │
+│  │                             │               │ New      │         │  │     │
+│  │                             │               │ York,    │         │  │     │
+│  │                             │               │ New Y    │         │  │     │
+│  │ Full crew                   │ Atlantic      │ Freepor… │ -       │  │ 20… │
+│  │                             │ Oceanic LLC   │          │         │  │     │
+│  │ Captain                     │ UICGS /       │ Andros   │ -       │  │ 20… │
+│  │                             │ Bowhead       │ Town,    │         │  │     │
+│  │                             │ Family of     │          │         │  │     │
+│  │                             │ Comp          │          │         │  │     │
+│  │ Vice President of Customer  │ PatientIQ     │ Chicago, │ -       │  │ 20… │
+│  │ Growth                      │               │ Chicago, │         │  │     │
+│  │                             │               │ Illinoi  │         │  │     │
+│  │ Creative Director           │ PadSplit      │ Atlanta, │ -       │  │ 20… │
+│  │                             │               │ Atlanta, │         │  │     │
+│  │                             │               │ Georgia  │         │  │     │
+│  │ Chief Financial Officer     │ Hospitable.c… │ London,  │ -       │  │ 20… │
+│  │                             │               │ London,  │         │  │     │
+│  │                             │               │ England, │         │  │     │
+│  │ Maintenance &amp; MEP       │ Scales and    │ Nassau,  │ -       │  │ 20… │
+│  │ Technician                  │ Associates    │          │         │  │     │
+│  │ Total Rewards Manager       │ PGIM Ireland  │ Letterk… │ -       │  │ 20… │
+│  │ Bid Manager                 │ Razorblue     │ Stockto… │ -       │  │ 20… │
+│  │                             │ Group         │          │         │  │     │
+│  │ Speculative                 │ Flok Health   │ Cambrid… │ -       │  │ 20… │
+│  │ LEAD                        │ ABM           │ Kilgore, │ -       │  │ 20… │
+│  │                             │ Industries    │          │         │  │     │
+│  │ Housekeeper Kabannas        │ Kabannas      │ Newcast… │ -       │  │ 20… │
+│  │ Newcastle                   │               │ Upon     │         │  │     │
+│  │                             │               │ Tyne,    │         │  │     │
+│  │ Block Operator              │ SAL TRADING   │ Smith's  │ -       │  │ 20… │
+│  │                             │ LIMITED       │ Parish,  │         │  │     │
+│  │ Physiotherapist UK          │ HealthHero    │ Brackne… │ -       │  │ 20… │
+│  │                             │               │ Brackne… │         │  │     │
+│  │                             │               │ Eng      │         │  │     │
+│  │ Graduate Business           │ Bezos.AI      │ London,  │ -       │  │ 20… │
+│  │ Operations Associate        │               │ London,  │         │  │     │
+│  │                             │               │ England, │         │  │     │
+│  │ Business Administration     │ Brainkind     │ Eastbou… │ -       │  │ 20… │
+│  │ SAP Print and output        │ ManpowerGroup │ Monterr… │ $       │  │ 19  │
+│  │ administrator               │               │ Nuevo    │ 65,400… │  │ de  │
+│  │                             │               │ León     │ (Mensu  │  │ ju… │
+│  │ SAP Basis Administrator     │ ManpowerGroup │ Monterr… │ $       │  │ 19  │
+│  │                             │               │ Nuevo    │ 65,400… │  │ de  │
+│  │                             │               │ León     │ (Mensu  │  │ ju… │
+│  │ SAP Authorization           │ ManpowerGroup │ Monterr… │ $       │  │ 19  │
+│  │ Administrator               │               │ Nuevo    │ 85,000… │  │ de  │
+│  │                             │               │ León     │ (Mensu  │  │ ju… │
+│  │ Global SAP Operations       │ ManpowerGroup │ Monterr… │ $       │  │ 19  │
+│  │ Engineer Scheduling and     │               │ Nuevo    │ 65,400… │  │ de  │
+│  │ Automatio                   │               │ León     │ (Mensu  │  │ ju… │
+│  │ Encargado de Mantenimiento  │ EXPORTADORA   │ Veracru… │ -       │  │ 19  │
+│  │ e Infraestructura           │ DE CAFE       │ Veracruz │         │  │ de  │
+│  │                             │ CALIFORNIA    │          │         │  │ ju… │
+│  │ IT - Infrastructure Systems │ Golden 1      │ Remote   │ -       │  │ 18d │
+│  │ - DevOps Engineer II (Remot │ Credit Union  │          │         │  │     │
+│  │ Senior Sales Engineer -     │ Perforce      │ Anywhere │ -       │  │ 18d │
+│  │ Delphix                     │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ DevOps Engineer REF1752R    │ Deutsche      │ Remote   │ -       │  │ 18d │
+│  │ (m/f/d)                     │ Telekom IT    │          │         │  │     │
+│  │                             │ Solutions     │          │         │  │     │
+│  │ Senior InfoSec Engineer     │ Charles River │ Remote   │ -       │  │ 18d │
+│  │ (SecDevOps) - (REMOTE)      │               │          │         │  │     │
+│  │ Working Student (m/f/d)     │ Bruker        │ Remote   │ -       │  │ 18d │
+│  │ DevOps – Software           │ Corporation   │          │         │  │     │
+│  │ Development                 │               │          │         │  │     │
+│  │ Backend Engineer            │ Adecco        │ Benito   │ $       │  │ 16  │
+│  │                             │               │ Juárez,  │ 64,000… │  │ de  │
+│  │                             │               │ Ciudad   │ (Mensu  │  │ ju… │
+│  │                             │               │ de       │         │  │     │
+│  │ DevOps Engineer             │ Aura          │ Anywhere │ -       │  │ 15d │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Sales Engineer (Remote, US  │ Liquibase     │ Anywhere │ -       │  │ 15d │
+│  │ Based)                      │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ 581321 DevOps Engineer      │ Philips       │ Remote   │ -       │  │ 15d │
+│  │ Testing (all genders)       │ Deutschland   │          │         │  │     │
+│  │ DevOps Engineer Mobile      │ Air Apps      │ Remote   │ -       │  │ 15d │
+│  │ DevOps Engineer             │ AssureSoft    │ Anywhere │ -       │  │ 15d │
+│  │                             │               │ in the   │         │  │     │
+│  │                             │               │ World    │         │  │     │
+│  │ Senior Software Engineer -  │ Close         │ Anywhere │ -       │  │ 15d │
+│  │ Backend/Python - USA Only   │               │ in the   │         │  │     │
+│  │ (1                          │               │ World    │         │  │     │
+│  │ Senior Software Engineer II │ Nomad         │ Remote   │ -       │  │ 15d │
+│  │ Senior SQL Database         │ NPS Prism     │ Anywhere │ -       │  │ 14d │
+│  │ Administrator DBA (Brazil,  │               │ in the   │         │  │     │
+│  │ Remote)                     │               │ World    │         │  │     │
+│  │ CRM Manager / GTM Systems   │ TKD Solutions │ Remote   │ -       │  │ 14d │
+│  │ Manager (m/w/d)             │               │          │         │  │     │
+│  │ Administrador de Sistemas   │ ManpowerGroup │ Miguel   │ Presen… │  │ 12  │
+│  │ Linux                       │               │ Hidalgo, │ y remot │  │ de  │
+│  │                             │               │ Ciudad   │         │  │ ju… │
+│  │                             │               │ de       │         │  │     │
+│  │ Administrador de Sistemas   │ ManpowerGroup │ Miguel   │ Presen… │  │ 11  │
+│  │ Linux                       │               │ Hidalgo, │ y remot │  │ de  │
+│  │                             │               │ Ciudad   │         │  │ ju… │
+│  │                             │               │ de       │         │  │     │
+└──┴─────────────────────────────┴───────────────┴──────────┴─────────┴──┴─────┘
+
+🌐 Reporte HTML generado: public/jobs.html
+⏱ Última corrida registrada

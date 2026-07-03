@@ -18,6 +18,12 @@ class TrabajoOrgProvider(Provider):
         "Accept": "text/html,application/xhtml+xml",
     }
 
+    BROAD_QUERY = "sistemas+informatica+tecnologia+infraestructura+devops+linux"
+
+    def __init__(self):
+        self._all_jobs: List[Job] = []
+        self._loaded = False
+
     @property
     def name(self) -> str:
         return "trabajoorg"
@@ -25,14 +31,28 @@ class TrabajoOrgProvider(Provider):
     def search(
         self, keyword: str, location: str, max_results: int = 30
     ) -> List[Job]:
-        kw = keyword.replace(" ", "+")
-        url = f"{self.BASE_URL}/jobs?q={kw}"
+        if not self._loaded:
+            self._all_jobs = self._fetch_all()
+            self._loaded = True
+
+        kw_lower = keyword.lower()
+        words = [w for w in kw_lower.split() if len(w) > 2]
+        matched = []
+        for job in self._all_jobs:
+            if len(matched) >= max_results:
+                break
+            searchable = f"{job.title} {job.company}".lower()
+            if kw_lower in searchable or any(w in searchable for w in words):
+                matched.append(job)
+        return matched
+
+    def _fetch_all(self) -> List[Job]:
+        url = f"{self.BASE_URL}/jobs?q={self.BROAD_QUERY}"
 
         try:
             resp = requests.get(url, headers=self.HEADERS, timeout=15)
             resp.raise_for_status()
-        except requests.RequestException as e:
-            print(f"  [!] Error fetching Trabajo.org: {e}")
+        except requests.RequestException:
             return []
 
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -40,9 +60,6 @@ class TrabajoOrgProvider(Provider):
         seen: set = set()
 
         for card in soup.select("li.nf-job"):
-            if len(jobs) >= max_results:
-                break
-
             title_link = card.select_one("h3 a")
             if not title_link:
                 continue
@@ -55,9 +72,7 @@ class TrabajoOrgProvider(Provider):
                 continue
             seen.add(full_url)
 
-            company_el = card.select_one(
-                'span i.lnr-briefcase'
-            )
+            company_el = card.select_one("span i.lnr-briefcase")
             company = ""
             if company_el:
                 company = company_el.parent.get_text(strip=True)
@@ -65,10 +80,8 @@ class TrabajoOrgProvider(Provider):
                 img = card.select_one("img.img-logo")
                 company = img.get("alt", "") if img else ""
 
-            location_el = card.select_one(
-                'span i.lnr-map-marker'
-            )
-            location = location_el.parent.get_text(strip=True) if location_el else "México"
+            location_el = card.select_one("span i.lnr-map-marker")
+            location = location_el.parent.get_text(strip=True) if location_el else "Mexico"
 
             date_el = card.select_one("p.text-muted small")
             date_raw = date_el.get_text(strip=True) if date_el else ""
@@ -79,16 +92,14 @@ class TrabajoOrgProvider(Provider):
                 for w in ["remoto", "home office", "homeoffice", "desde casa"]
             )
 
-            jobs.append(
-                Job(
-                    title=title,
-                    company=company,
-                    location=location,
-                    url=full_url,
-                    source="trabajoorg",
-                    date_posted=date_raw,
-                    remote=is_remote,
-                )
-            )
+            jobs.append(Job(
+                title=title,
+                company=company,
+                location=location,
+                url=full_url,
+                source="trabajoorg",
+                date_posted=date_raw,
+                remote=is_remote,
+            ))
 
         return jobs

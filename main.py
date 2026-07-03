@@ -73,6 +73,13 @@ def main():
         db_path=config.db_path,
     )
 
+    keywords = store.get_keywords()
+    if not keywords:
+        keywords = config.search.keywords
+    if not keywords:
+        console.print("[red]No hay keywords configuradas[/red]")
+        return
+
     total_new = 0
     jobs_all: List[Job] = []
 
@@ -85,7 +92,7 @@ def main():
         provider = provider_cls()
         console.print(f"\n[bold]🔍 Buscando en {provider.name.upper()}...[/bold]")
 
-        for keyword in config.search.keywords:
+        for keyword in keywords:
             console.print(f"  [dim]Buscando '{keyword}'...[/dim]", end="\r")
 
             try:
