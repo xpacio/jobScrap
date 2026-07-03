@@ -118,6 +118,12 @@ def main():
     html_path = generate_html(days=config.search.days_back, dsn=config.dsn)
     console.print(f"\n[bold green]🌐 Reporte HTML generado: {html_path}[/bold green]")
 
+    import datetime
+    last_run_dir = os.path.dirname(html_path) if html_path else "."
+    with open(os.path.join(last_run_dir, "last_run.txt"), "w") as f:
+        f.write(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+    console.print("[bold green]⏱ Última corrida registrada[/bold green]")
+
 
 if __name__ == "__main__":
     try:
