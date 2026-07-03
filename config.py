@@ -1,3 +1,4 @@
+import os
 from dataclasses import dataclass, field
 from typing import List
 
@@ -26,3 +27,8 @@ class AppConfig:
     search: SearchConfig = field(default_factory=SearchConfig)
     providers: List[str] = field(default_factory=lambda: ["remoteok", "weworkremotely", "computrabajo", "trabajoorg"])
     db_path: str = "jobs.db"
+    dsn: str = ""
+
+    @property
+    def use_pg(self) -> bool:
+        return bool(self.dsn or os.environ.get("JOBSCRAP_DSN"))

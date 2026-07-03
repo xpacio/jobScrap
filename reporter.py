@@ -1,3 +1,4 @@
+import os
 from typing import List
 
 from models.job import Job
@@ -81,8 +82,8 @@ CARD_TEMPLATE = """<div class="card">
 </div>"""
 
 
-def generate_html(days: int = 15, output: str = "public/jobs.html"):
-    store = Store()
+def generate_html(days: int = 15, output: str = "public/jobs.html", dsn: str = ""):
+    store = Store(dsn=dsn or os.environ.get("JOBSCRAP_DSN"))
     jobs = store.get_recent_jobs(days)
     store.close()
 

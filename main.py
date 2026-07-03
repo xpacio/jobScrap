@@ -1,3 +1,4 @@
+import os
 import sys
 from typing import List
 
@@ -67,7 +68,10 @@ def display_jobs(jobs: List[Job]):
 def main():
     load_providers()
     config = AppConfig()
-    store = Store(config.db_path)
+    store = Store(
+        dsn=config.dsn or os.environ.get("JOBSCRAP_DSN"),
+        db_path=config.db_path,
+    )
 
     total_new = 0
     jobs_all: List[Job] = []
@@ -111,7 +115,7 @@ def main():
 
     display_jobs(unique_jobs)
 
-    html_path = generate_html(days=config.search.days_back)
+    html_path = generate_html(days=config.search.days_back, dsn=config.dsn)
     console.print(f"\n[bold green]🌐 Reporte HTML generado: {html_path}[/bold green]")
 
 
