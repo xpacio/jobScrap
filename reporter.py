@@ -1,4 +1,5 @@
 import os
+from datetime import datetime
 from typing import List
 
 from models.job import Job
@@ -9,54 +10,20 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JobScrap - Ofertas {days} días</title>
-<style>
-  *,*::before,*::after{{box-sizing:border-box}}
-  body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f5;margin:0;padding:20px;color:#222}}
-  h1{{font-size:1.4rem;margin:0 0 8px}}
-  .subtitle{{color:#666;margin-bottom:20px;font-size:.9rem}}
-  .last-run{{color:#888;font-size:.8rem;margin-bottom:12px;text-align:right}}
-  .stats{{margin-bottom:16px;display:flex;gap:12px;flex-wrap:wrap}}
-  .stat{{background:#fff;padding:8px 14px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);font-size:.85rem}}
-  .stat strong{{font-size:1.1rem}}
-  table{{width:100%;max-width:1400px;margin:0 auto;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08)}}
-  th{{background:#f8f9fa;padding:10px 12px;text-align:left;font-size:.8rem;text-transform:uppercase;letter-spacing:.5px;color:#666;border-bottom:2px solid #eee}}
-  td{{padding:10px 12px;border-bottom:1px solid #f0f0f0;font-size:.88rem;vertical-align:middle}}
-  tr:hover{{background:#fafafa}}
-  tr:last-child td{{border-bottom:none}}
-  .title-cell{{font-weight:600}}
-  .title-cell a{{color:#1a73e8;text-decoration:none}}
-  .title-cell a:hover{{text-decoration:underline}}
-  .salary-cell{{color:#0a7;font-weight:600;white-space:nowrap}}
-  .remote-badge{{display:inline-block;font-size:.75rem;padding:2px 10px;border-radius:99px;font-weight:500}}
-  .remote-yes{{background:#e3f5e7;color:#0a5}}
-  .remote-no{{background:#fde8e8;color:#c33}}
-  .date-cell{{color:#888;white-space:nowrap;font-size:.82rem}}
-  .company-cell{{color:#555}}
-  .tooltip{{position:relative;cursor:help}}
-  .tooltip .tooltip-text{{visibility:hidden;width:180px;background:#333;color:#fff;text-align:center;border-radius:6px;padding:5px 10px;position:absolute;z-index:1;bottom:125%;left:50%;margin-left:-90px;opacity:0;transition:opacity .2s;font-size:.78rem;font-weight:400;pointer-events:none}}
-  .tooltip .tooltip-text::after{{content:"";position:absolute;top:100%;left:50%;margin-left:-5px;border:5px solid transparent;border-top-color:#333}}
-  .tooltip:hover .tooltip-text{{visibility:visible;opacity:1}}
-  .footer{{text-align:center;margin-top:20px;font-size:.8rem;color:#999}}
-  a{{color:#1a73e8}}
-  @media(max-width:768px){{table{{font-size:.8rem}}th,td{{padding:8px 6px}}}}
-</style>
+<title>JobScrap - Ofertas {days} dias</title>
 </head>
 <body>
-<h1>🔍 JobScrap — Ofertas de empleo</h1>
-<p class="subtitle">Últimos {days} días | {total} ofertas | {remote_count} remotas</p>
-<div class="last-run">⏱ Última búsqueda: {last_run}</div>
-<div class="stats">
-  <div class="stat"><strong>{total}</strong> ofertas</div>
-  <div class="stat"><strong>{remote_count}</strong> remotas 🏠</div>
-  <div class="stat"><strong>{onsite_count}</strong> presenciales 🏢</div>
-  <div class="stat"><strong>{with_salary}</strong> con sueldo visible 💰</div>
-</div>
-<table>
+
+<h1>JobScrap - Ofertas de empleo</h1>
+<p>Ultimos {days} dias | {total} ofertas | {remote_count} remotas</p>
+<p><i>Ultima busqueda: {last_run}</i></p>
+
+<hr>
+
+<table border="1" cellpadding="6" cellspacing="0" width="100%">
   <thead>
     <tr>
-      <th>Título</th>
+      <th>Titulo</th>
       <th>Empresa</th>
       <th>Sueldo</th>
       <th>Tipo</th>
@@ -67,24 +34,34 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 {rows}
   </tbody>
 </table>
-<p class="footer" style="margin-top:20px">
-  Generado: {generated} | <a href="https://github.com/xpacio/jobScrap" style="color:#1a73e8;">jobScrap</a>
-</p>
+
+<hr>
+<p>Generado: {generated} | <a href="https://github.com/xpacio/jobScrap">jobScrap</a></p>
 </body>
 </html>"""
 
 ROW_TEMPLATE = """    <tr>
-      <td class="title-cell">
-        <span class="tooltip">
-          <a href="{url}" target="_blank" rel="noopener">{title}</a>
-          <span class="tooltip-text">📍 {location}<br>🔹 {source}</span>
-        </span>
-      </td>
-      <td class="company-cell">{company}</td>
-      <td class="salary-cell">{salary}</td>
-      <td>{remote_html}</td>
-      <td class="date-cell">{date}</td>
+      <td><a href="{url}" target="_blank" rel="noopener" title="{tooltip}">{title}</a></td>
+      <td>{company}</td>
+      <td>{salary}</td>
+      <td>{tipo}</td>
+      <td>{date}</td>
     </tr>"""
+
+
+def _time_ago(timestamp: str) -> str:
+    try:
+        then = datetime.strptime(timestamp, "%Y-%m-%d %H:%M:%S")
+    except ValueError:
+        return timestamp
+    diff = (datetime.now() - then).total_seconds()
+    if diff < 60:
+        return "hace menos de 1 minuto"
+    if diff < 3600:
+        return f"hace {int(diff // 60)} minutos"
+    if diff < 86400:
+        return f"hace {int(diff // 3600)} horas"
+    return f"hace {int(diff // 86400)} dias"
 
 
 def generate_html(days: int = 20, output: str = "public/jobs.html", dsn: str = ""):
@@ -99,21 +76,19 @@ def generate_html(days: int = 20, output: str = "public/jobs.html", dsn: str = "
 
     rows_html = "\n".join(_build_row(j) for j in jobs)
 
-    import datetime
-    generated = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+    generated = datetime.now().strftime("%Y-%m-%d %H:%M")
     last_run = generated
 
     html = HTML_TEMPLATE.format(
         days=days,
         total=total,
         remote_count=remote_count,
-        onsite_count=onsite_count,
-        with_salary=with_salary,
         rows=rows_html,
         generated=generated,
         last_run=last_run,
     )
 
+    os.makedirs(os.path.dirname(output), exist_ok=True)
     with open(output, "w") as f:
         f.write(html)
 
@@ -125,27 +100,25 @@ def generate_html(days: int = 20, output: str = "public/jobs.html", dsn: str = "
 
 
 def _build_row(job: Job) -> str:
-    salary = job.salary if job.salary else "—"
-    remote_html = (
-        '<span class="remote-badge remote-yes">🏠 Remoto</span>'
-        if job.remote
-        else '<span class="remote-badge remote-no">🏢 Presencial</span>'
-    )
+    salary = job.salary if job.salary else "-"
+    tipo = "Remoto" if job.remote else "Presencial"
     source_map = {
         "remoteok": "RemoteOK",
         "wwr": "WWR",
         "computrabajo": "CompuTrabajo",
         "indeed": "Indeed",
     }
+    src = source_map.get(job.source, job.source)
+    loc = job.location or "No especificada"
+    tooltip = f"Ubicacion: {loc} | Fuente: {src}"
     return ROW_TEMPLATE.format(
         url=job.url,
         title=job.title,
-        company=job.company or "—",
-        location=job.location or "No especificada",
+        company=job.company or "-",
         salary=salary,
-        source=source_map.get(job.source, job.source),
-        remote_html=remote_html,
-        date=job.date_posted or "—",
+        tipo=tipo,
+        date=job.date_posted or "-",
+        tooltip=tooltip,
     )
 
 
