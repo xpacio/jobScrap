@@ -135,6 +135,7 @@ def _build_row(job: Job, last_run_ts: str = "") -> str:
         "wwr": "WWR",
         "computrabajo": "CompuTrabajo",
         "indeed": "Indeed",
+        "hireline": "Hireline",
     }
     src = source_map.get(job.source, job.source)
     loc = job.location or "No especificada"
