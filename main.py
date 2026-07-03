@@ -22,6 +22,8 @@ def load_providers():
     PROVIDER_MAP["weworkremotely"] = WeWorkRemotelyProvider
     from providers.computrabajo import ComputrabajoProvider
     PROVIDER_MAP["computrabajo"] = ComputrabajoProvider
+    from providers.trabajoorg import TrabajoOrgProvider
+    PROVIDER_MAP["trabajoorg"] = TrabajoOrgProvider
 
 
 def display_jobs(jobs: List[Job]):
@@ -46,6 +48,7 @@ def display_jobs(jobs: List[Job]):
             "remoteok": "[bold green]ROK[/]",
             "wwr": "[bold yellow]WWR[/]",
             "computrabajo": "[bold magenta]CT[/]",
+            "trabajoorg": "[bold cyan]TO[/]",
         }.get(job.source, job.source)
         tipo = "🏠" if job.remote else "🏢"
         table.add_row(
