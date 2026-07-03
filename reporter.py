@@ -1,4 +1,5 @@
 import os
+import re
 from datetime import datetime
 from typing import List
 
@@ -8,6 +9,10 @@ from store import Store
 
 def _sort_key(job: Job):
     return (job.remote, job.salary != "", job.date_posted or "")
+
+
+def _strip_hace(s: str) -> str:
+    return re.sub(r'^hace\s+', '', s, flags=re.IGNORECASE)
 
 
 HTML_TEMPLATE = """<!DOCTYPE html>
@@ -122,7 +127,7 @@ def _build_row(job: Job) -> str:
         company=(job.company or "-")[:12],
         salary=salary,
         tipo=tipo,
-        date=job.date_posted or "-",
+        date=_strip_hace(job.date_posted or "-"),
         tooltip=tooltip,
     )
 

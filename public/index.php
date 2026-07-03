@@ -137,7 +137,7 @@ $source_map = ['remoteok'=>'RemoteOK','wwr'=>'WWR','computrabajo'=>'CompuTrabajo
       <td><?= htmlspecialchars(mb_substr($j['company'] ?: '-', 0, 12)) ?></td>
       <td><?= $j['salary'] ? htmlspecialchars($j['salary']) : '-' ?></td>
       <td><?= $tipo ?></td>
-      <td><?= htmlspecialchars($j['date_posted'] ?: '-') ?></td>
+      <td><?= htmlspecialchars(preg_replace('/^hace\s+/i', '', $j['date_posted'] ?: '-')) ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>
