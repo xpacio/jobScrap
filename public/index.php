@@ -63,14 +63,22 @@ function time_ago($timestamp) {
     return 'hace ' . floor($diff / 86400) . ' dias';
 }
 
+$last_run_ts = '';
 $last_run_relative = '';
 $last_run_file = __DIR__ . '/last_run.txt';
 if (file_exists($last_run_file)) {
-    $ts = trim(file_get_contents($last_run_file));
-    $last_run_relative = time_ago($ts);
+    $last_run_ts = trim(file_get_contents($last_run_file));
+    $last_run_relative = time_ago($last_run_ts);
 }
 
 $source_map = ['remoteok'=>'RemoteOK','wwr'=>'WWR','computrabajo'=>'CompuTrabajo','trabajoorg'=>'TrabajoOrg'];
+
+function is_new($created_at, $last_run_ts) {
+    if (!$last_run_ts || !$created_at) return false;
+    $c = DateTime::createFromFormat('Y-m-d H:i:s', substr($created_at, 0, 19));
+    $l = DateTime::createFromFormat('Y-m-d H:i:s', substr($last_run_ts, 0, 19));
+    return $c && $l && $c >= $l;
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -131,9 +139,11 @@ $source_map = ['remoteok'=>'RemoteOK','wwr'=>'WWR','computrabajo'=>'CompuTrabajo
       $loc = $j['location'] ?: 'No especificada';
       $tooltip = 'Ubicacion: ' . $loc . ' | Fuente: ' . $src_label;
       $tipo = $j['remote'] ? 'R' : 'P';
+      $titulo = $j['title'];
+      if (is_new($j['created_at'], $last_run_ts)) $titulo .= ' (N)';
     ?>
     <tr>
-      <td><a href="<?= htmlspecialchars($j['url']) ?>" target="_blank" rel="noopener" title="<?= htmlspecialchars($tooltip) ?>"><?= htmlspecialchars($j['title']) ?></a></td>
+      <td><a href="<?= htmlspecialchars($j['url']) ?>" target="_blank" rel="noopener" title="<?= htmlspecialchars($tooltip) ?>"><?= htmlspecialchars($titulo) ?></a></td>
       <td><?= htmlspecialchars(mb_substr($j['company'] ?: '-', 0, 12)) ?></td>
       <td><?= $j['salary'] ? htmlspecialchars($j['salary']) : '-' ?></td>
       <td><?= $tipo ?></td>

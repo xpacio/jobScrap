@@ -78,13 +78,19 @@ def generate_html(days: int = 20, output: str = "public/jobs.html", dsn: str = "
     jobs = store.get_recent_jobs(days)
     store.close()
 
+    last_run_old = ""
+    last_run_path = os.path.join(os.path.dirname(output) or ".", "last_run.txt")
+    if os.path.exists(last_run_path):
+        with open(last_run_path) as f:
+            last_run_old = f.read().strip()
+
     total = len(jobs)
     remote_count = sum(1 for j in jobs if j.remote)
     onsite_count = total - remote_count
     with_salary = sum(1 for j in jobs if j.salary.strip())
 
     jobs.sort(key=_sort_key, reverse=True)
-    rows_html = "\n".join(_build_row(j) for j in jobs)
+    rows_html = "\n".join(_build_row(j, last_run_old) for j in jobs)
 
     generated = datetime.now().strftime("%Y-%m-%d %H:%M")
     last_run = generated
@@ -102,14 +108,24 @@ def generate_html(days: int = 20, output: str = "public/jobs.html", dsn: str = "
     with open(output, "w") as f:
         f.write(html)
 
-    last_run_path = os.path.join(os.path.dirname(output), "last_run.txt")
     with open(last_run_path, "w") as f:
         f.write(generated)
 
     return output
 
 
-def _build_row(job: Job) -> str:
+def _is_new(created_at: str, last_run_ts: str) -> bool:
+    if not last_run_ts or not created_at:
+        return False
+    try:
+        last_dt = datetime.strptime(last_run_ts, "%Y-%m-%d %H:%M:%S")
+        created_dt = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
+        return created_dt >= last_dt
+    except (ValueError, TypeError):
+        return False
+
+
+def _build_row(job: Job, last_run_ts: str = "") -> str:
     salary = job.salary if job.salary else "-"
     tipo = "R" if job.remote else "P"
     source_map = {
@@ -121,9 +137,12 @@ def _build_row(job: Job) -> str:
     src = source_map.get(job.source, job.source)
     loc = job.location or "No especificada"
     tooltip = f"Ubicacion: {loc} | Fuente: {src}"
+    title = job.title
+    if _is_new(job.created_at, last_run_ts):
+        title += " (N)"
     return ROW_TEMPLATE.format(
         url=job.url,
-        title=job.title,
+        title=title,
         company=(job.company or "-")[:12],
         salary=salary,
         tipo=tipo,
