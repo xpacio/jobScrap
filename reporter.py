@@ -6,6 +6,10 @@ from models.job import Job
 from store import Store
 
 
+def _sort_key(job: Job):
+    return (job.remote, job.salary != "", job.date_posted or "")
+
+
 HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -74,6 +78,7 @@ def generate_html(days: int = 20, output: str = "public/jobs.html", dsn: str = "
     onsite_count = total - remote_count
     with_salary = sum(1 for j in jobs if j.salary.strip())
 
+    jobs.sort(key=_sort_key, reverse=True)
     rows_html = "\n".join(_build_row(j) for j in jobs)
 
     generated = datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -101,7 +106,7 @@ def generate_html(days: int = 20, output: str = "public/jobs.html", dsn: str = "
 
 def _build_row(job: Job) -> str:
     salary = job.salary if job.salary else "-"
-    tipo = "Remoto" if job.remote else "Presencial"
+    tipo = "R" if job.remote else "P"
     source_map = {
         "remoteok": "RemoteOK",
         "wwr": "WWR",
@@ -114,7 +119,7 @@ def _build_row(job: Job) -> str:
     return ROW_TEMPLATE.format(
         url=job.url,
         title=job.title,
-        company=job.company or "-",
+        company=(job.company or "-")[:12],
         salary=salary,
         tipo=tipo,
         date=job.date_posted or "-",

@@ -36,7 +36,7 @@ if ($search) {
     $params[] = '%' . mb_strtolower($search) . '%';
 }
 
-$sql = 'SELECT * FROM jobs WHERE ' . implode(' AND ', $where) . ' ORDER BY created_at DESC';
+$sql = 'SELECT * FROM jobs WHERE ' . implode(' AND ', $where) . " ORDER BY created_at DESC, (CASE WHEN COALESCE(salary, '') != '' THEN 0 ELSE 1 END), remote DESC NULLS LAST";
 
 $stmt = $pdo->prepare($sql);
 $stmt->execute($params);
@@ -130,11 +130,11 @@ $source_map = ['remoteok'=>'RemoteOK','wwr'=>'WWR','computrabajo'=>'CompuTrabajo
       $src_label = $source_map[$j['source']] ?? $j['source'];
       $loc = $j['location'] ?: 'No especificada';
       $tooltip = 'Ubicacion: ' . $loc . ' | Fuente: ' . $src_label;
-      $tipo = $j['remote'] ? 'Remoto' : 'Presencial';
+      $tipo = $j['remote'] ? 'R' : 'P';
     ?>
     <tr>
       <td><a href="<?= htmlspecialchars($j['url']) ?>" target="_blank" rel="noopener" title="<?= htmlspecialchars($tooltip) ?>"><?= htmlspecialchars($j['title']) ?></a></td>
-      <td><?= htmlspecialchars($j['company'] ?: '-') ?></td>
+      <td><?= htmlspecialchars(mb_substr($j['company'] ?: '-', 0, 12)) ?></td>
       <td><?= $j['salary'] ? htmlspecialchars($j['salary']) : '-' ?></td>
       <td><?= $tipo ?></td>
       <td><?= htmlspecialchars($j['date_posted'] ?: '-') ?></td>

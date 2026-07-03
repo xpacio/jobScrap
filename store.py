@@ -94,7 +94,7 @@ class Store:
 
     def get_all_jobs(self) -> List[Job]:
         cur = self.conn.cursor()
-        cur.execute("SELECT * FROM jobs ORDER BY created_at DESC")
+        cur.execute("SELECT * FROM jobs ORDER BY created_at DESC, (CASE WHEN COALESCE(salary, '') != '' THEN 0 ELSE 1 END), remote DESC")
         rows = cur.fetchall()
         cur.close()
         return [self._row_to_job(r) for r in rows]
@@ -103,12 +103,12 @@ class Store:
         cur = self.conn.cursor()
         if self._pg:
             cur.execute(
-                "SELECT * FROM jobs WHERE created_at >= NOW() - make_interval(days => %s) ORDER BY created_at DESC",
+                "SELECT * FROM jobs WHERE created_at >= NOW() - make_interval(days => %s) ORDER BY created_at DESC, (CASE WHEN COALESCE(salary, '') != '' THEN 0 ELSE 1 END), remote DESC NULLS LAST",
                 (days,),
             )
         else:
             cur.execute(
-                "SELECT * FROM jobs WHERE created_at >= datetime('now', ?) ORDER BY created_at DESC",
+                "SELECT * FROM jobs WHERE created_at >= datetime('now', ?) ORDER BY created_at DESC, (CASE WHEN COALESCE(salary, '') != '' THEN 0 ELSE 1 END), remote DESC",
                 (f"-{days} days",),
             )
         rows = cur.fetchall()
