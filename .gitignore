@@ -1,3 +1,5 @@
 *.db
 __pycache__/
 .venv/
+public/jobs.html
+run_scrap.sh

@@ -81,7 +81,7 @@ CARD_TEMPLATE = """<div class="card">
 </div>"""
 
 
-def generate_html(days: int = 15, output: str = "jobs.html"):
+def generate_html(days: int = 15, output: str = "public/jobs.html"):
     store = Store()
     jobs = store.get_recent_jobs(days)
     store.close()
