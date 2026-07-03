@@ -13,6 +13,7 @@ class Job:
     snippet: str = ""
     salary: str = ""
     date_posted: Optional[str] = None
+    remote: bool = False
     created_at: str = field(default_factory=lambda: datetime.now().isoformat())
 
     def __hash__(self):

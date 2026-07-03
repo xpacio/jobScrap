@@ -70,36 +70,44 @@ class WeWorkRemotelyProvider(Provider):
 
                 title_el = link.select_one(".new-listing__header__title__text")
                 if not title_el:
-                    title_el = link.select_one("h3.new-listing__header__title")
+                    title_el = link.select_one(
+                        "h3.new-listing__header__title"
+                    )
                 if not title_el:
                     continue
 
                 title = title_el.get_text(strip=True)
-                full_url = f"{self.BASE_URL}{href}" if href.startswith("/") else href
+                full_url = (
+                    f"{self.BASE_URL}{href}" if href.startswith("/") else href
+                )
 
                 if full_url in seen:
                     continue
 
-                company = (
-                    link.select_one(".new-listing__company-name")
-                )
-                company = company.get_text(strip=True) if company else ""
+                company_el = link.select_one(".new-listing__company-name")
+                company = company_el.get_text(strip=True) if company_el else ""
 
-                date_raw = (
-                    link.select_one(".new-listing__header__icons__date")
-                )
+                date_raw = link.select_one(".new-listing__header__icons__date")
                 date_raw = date_raw.get_text(strip=True) if date_raw else ""
 
                 cat_els = link.select(".new-listing__categories__category")
                 cat_texts = [c.get_text(strip=True) for c in cat_els]
                 location = "Remote"
+                is_remote = True
                 for ct in cat_texts:
                     if "Anywhere" in ct or "World" in ct or "Remote" in ct:
                         location = ct
-                    elif ct in ("Full-Time", "Part-Time", "Contract", "Freelance", "Featured"):
+                    elif ct in (
+                        "Full-Time",
+                        "Part-Time",
+                        "Contract",
+                        "Freelance",
+                        "Featured",
+                    ):
                         continue
                     elif "Anywhere" not in location and "Remote" not in location:
                         location = ct
+                        is_remote = False
 
                 seen[full_url] = Job(
                     title=title,
@@ -109,6 +117,7 @@ class WeWorkRemotelyProvider(Provider):
                     source="wwr",
                     snippet=" | ".join(cat_texts[:4]),
                     date_posted=date_raw,
+                    remote=is_remote,
                 )
 
         return list(seen.values())

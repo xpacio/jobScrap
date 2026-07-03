@@ -7,6 +7,7 @@ from rich.table import Table
 from config import AppConfig
 from models.job import Job
 from store import Store
+from reporter import generate_html
 
 
 console = Console()
@@ -19,6 +20,8 @@ def load_providers():
     PROVIDER_MAP["remoteok"] = RemoteOKProvider
     from providers.weworkremotely import WeWorkRemotelyProvider
     PROVIDER_MAP["weworkremotely"] = WeWorkRemotelyProvider
+    from providers.computrabajo import ComputrabajoProvider
+    PROVIDER_MAP["computrabajo"] = ComputrabajoProvider
 
 
 def display_jobs(jobs: List[Job]):
@@ -30,23 +33,29 @@ def display_jobs(jobs: List[Job]):
 
     table = Table(show_header=True, header_style="bold cyan")
     table.add_column("Fuente", style="dim", width=8)
-    table.add_column("Título", width=40)
-    table.add_column("Empresa", width=25)
-    table.add_column("Ubicación", width=20)
-    table.add_column("Fecha", width=12)
+    table.add_column("Título", width=35)
+    table.add_column("Empresa", width=20)
+    table.add_column("Ubicación", width=16)
+    table.add_column("Sueldo", width=14)
+    table.add_column("Tipo", width=8)
+    table.add_column("Fecha", width=10)
 
     for job in sorted(jobs, key=lambda j: j.date_posted or "", reverse=True):
         source_tag = {
             "indeed": "[bold cyan]Indeed[/]",
-            "remoteok": "[bold green]RemoteOK[/]",
+            "remoteok": "[bold green]ROK[/]",
             "wwr": "[bold yellow]WWR[/]",
+            "computrabajo": "[bold magenta]CT[/]",
         }.get(job.source, job.source)
+        tipo = "🏠" if job.remote else "🏢"
         table.add_row(
             source_tag,
-            job.title[:60],
-            job.company[:35] or "-",
-            job.location[:30] or "-",
-            (job.date_posted or "-")[:15],
+            job.title[:55],
+            job.company[:30] or "-",
+            job.location[:25] or "-",
+            job.salary[:18] or "-",
+            tipo,
+            (job.date_posted or "-")[:12],
         )
 
     console.print(table)
@@ -98,6 +107,9 @@ def main():
     console.print(f"\n[bold]📊 Total en DB: {total_db} ofertas | Esta sesión: {total_new} nuevas (mostrando {len(unique_jobs)} únicas)[/bold]")
 
     display_jobs(unique_jobs)
+
+    html_path = generate_html(days=config.search.days_back)
+    console.print(f"\n[bold green]🌐 Reporte HTML generado: {html_path}[/bold green]")
 
 
 if __name__ == "__main__":

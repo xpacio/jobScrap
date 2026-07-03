@@ -1,6 +1,5 @@
 import json
-import time
-from typing import List, Optional, Dict
+from typing import Dict, List, Optional
 
 import requests
 
@@ -58,7 +57,6 @@ class RemoteOKProvider(Provider):
             resp = requests.get(self.API_URL, headers=self.HEADERS, timeout=20)
             resp.raise_for_status()
             data = resp.json()
-            # First element is metadata/legal notice, skip it
             self._all_jobs_cache = data[1:] if isinstance(data, list) and len(data) > 1 else []
             self._cache_loaded = True
         except (requests.RequestException, json.JSONDecodeError, IndexError) as e:
@@ -84,6 +82,18 @@ class RemoteOKProvider(Provider):
                 dt = datetime.datetime.fromtimestamp(epoch)
                 date_str = dt.strftime("%Y-%m-%d")
 
+            salary_min = raw.get("salary_min")
+            salary_max = raw.get("salary_max")
+            salary = ""
+            if salary_min and salary_max:
+                salary = f"${salary_min} - ${salary_max}"
+            elif salary_min:
+                salary = f"${salary_min}+"
+            elif salary_max:
+                salary = f"hasta ${salary_max}"
+
+            is_remote = "remote" in location.lower() or location.lower() == "anywhere"
+
             return Job(
                 title=title.strip(),
                 company=company.strip(),
@@ -91,8 +101,9 @@ class RemoteOKProvider(Provider):
                 url=f"{self.BASE_URL}/remote-jobs/{slug}",
                 source="remoteok",
                 snippet=tags_str,
-                salary="",
+                salary=salary,
                 date_posted=date_str,
+                remote=is_remote,
             )
         except Exception:
             return None
