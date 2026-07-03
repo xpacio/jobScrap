@@ -232,6 +232,7 @@ function is_new($created_at, $last_run_ts) {
 <table border="1" cellpadding="6" cellspacing="0" width="100%">
   <thead>
     <tr>
+      <th>Fuente</th>
       <th>Titulo</th>
       <th>Empresa</th>
       <th>Sueldo</th>
@@ -242,6 +243,7 @@ function is_new($created_at, $last_run_ts) {
   <tbody>
     <?php foreach ($jobs as $j):
       $src_label = $source_map[$j['source']] ?? $j['source'];
+      $src_short = mb_substr($src_label, 0, 5);
       $loc = $j['location'] ?: 'No especificada';
       $tooltip = 'Ubicacion: ' . $loc . ' | Fuente: ' . $src_label;
       $tipo = $j['remote'] ? 'R' : 'P';
@@ -249,6 +251,7 @@ function is_new($created_at, $last_run_ts) {
       if (is_new($j['created_at'], $last_run_ts)) $titulo .= ' (N)';
     ?>
     <tr>
+      <td><?= htmlspecialchars($src_short) ?></td>
       <td><a href="<?= htmlspecialchars($j['url']) ?>" target="_blank" rel="noopener" title="<?= htmlspecialchars($tooltip) ?>"><?= htmlspecialchars($titulo) ?></a></td>
       <td><?= htmlspecialchars(mb_substr($j['company'] ?: '-', 0, 12)) ?></td>
       <td><?= $j['salary'] ? htmlspecialchars($j['salary']) : '-' ?></td>

@@ -32,6 +32,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <table border="1" cellpadding="6" cellspacing="0" width="100%">
   <thead>
     <tr>
+      <th>Fuente</th>
       <th>Titulo</th>
       <th>Empresa</th>
       <th>Sueldo</th>
@@ -50,6 +51,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </html>"""
 
 ROW_TEMPLATE = """    <tr>
+      <td>{source}</td>
       <td><a href="{url}" target="_blank" rel="noopener" title="{tooltip}">{title}</a></td>
       <td>{company}</td>
       <td>{salary}</td>
@@ -143,6 +145,7 @@ def _build_row(job: Job, last_run_ts: str = "") -> str:
     return ROW_TEMPLATE.format(
         url=job.url,
         title=title,
+        source=src[:5],
         company=(job.company or "-")[:12],
         salary=salary,
         tipo=tipo,
